@@ -1,0 +1,51 @@
+/* 鲜花详情页 */
+.details { width: 100%; height: auto; }
+.details .details-box { width: 100%; height: auto; background-color: #fff; }
+.details .details-box .details-box-t { width: 100%; height: auto; padding: 15px 10px; }
+.details .details-box .details-box-t h3 { width: 100%; font-size: 16px;}
+.details .details-box .details-box-t p { width: 100%; overflow: hidden; font-size: 14px; color: #c4c4c4; line-height: 32px; }
+.details .details-box .details-box-t p span { float: left; }
+.details .details-box .details-box-t p b { color: #ca231c; margin-right: 10px; }
+.details .details-box .details-box-t p e { text-decoration: line-through; color: #c4c4c4; }
+.details .details-box .details-box-t p button { float: right; font-size: 14px; border-radius: 5px; }
+
+
+.details .details-assort { width: 100%; height: auto; background-color: #fff; margin: 10px 0; padding: 10px; }
+.details .details-assort .details-assort-title { width: 100%; height: auto; margin-bottom: 10px; }
+.details .details-assort .details-assort-title h3 { width: 100%; height: auto; color: #656565; }
+.details .details-assort .details-assort-content { width: 100%; overflow-x: scroll; padding-bottom: 10px; }
+.details .details-assort .details-assort-content ul { width: 200%; }
+.details .details-assort .details-assort-content ul li { float: left; margin-right: 15px; width: 100px; }
+.details .details-assort .details-assort-content ul li h3 { font-size: 12px; margin: 3px 0; text-align: left; color: #656565;overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.details .details-assort .details-assort-content ul li img { height: 85px; }
+.details .details-assort .details-assort-content ul li p { text-align: left; }
+.details .details-assort .details-assort-content ul li p input { float: left; margin-top: 5px; }
+.details .details-assort .details-assort-content ul li p e { color: #ca231c; font-size: 12px; font-weight: bold; }
+
+.am-direction-nav { display: none; }
+.am-slider-c3 { box-shadow: none; }
+.am-slider-c3 .am-slider-desc { background-color: transparent; left: auto; right: 5px; }
+.am-slider-c3 .am-slider-counter { background-color: rgba(0, 0, 0, 0.4); padding: 0 10px; width: auto; border-radius: 50%; }
+
+.details-foot { width: 100%; height: auto; background-color: #fff; overflow: hidden; }
+.details-foot [data-am-widget=tabs] { margin: 0; }
+.details-foot .am-tabs-default .am-tabs-nav { background-color: transparent; }
+.details-foot .am-tabs-default .am-tabs-nav>.am-active a { background-color: #ca231c; }
+.details-foot .am-tabs-bd { border: none; }
+.details-foot .am-tabs-bd .am-table-bordered>tbody>tr>th { width: 75px; text-align:center; vertical-align:middle; }
+
+
+/* 评价 */
+.details-foot .comment ul { padding-top: 0; }
+.details-foot .comment ul li { padding: 10px 0 0; overflow: hidden; }
+.details-foot .comment .comment-left { width: 60px; float: left; }
+.details-foot .comment .comment-left img { width: 100%; }
+.details-foot .comment .comment-left p { width: 100%; font-size: 12px; color: #656565; line-height: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.details-foot .comment .comment-top { width: calc(100% - 60px); float: left; padding-left: 10px; }
+.details-foot .comment .comment-top p { width: 100%; font-size: 12px; line-height: 18px; }
+
+/* 底部购买按钮 */
+.menu { padding-top: 0; border-top: 1px solid #e5e5e5; z-index: 99999; }
+.menu ul li:first-child { padding-top: 5px; }
+.menu ul li:last-child { width: 80%; background-color: #ca231c; }
+.menu ul li:last-child p { color: #fff; text-align: center; line-height: 45px; font-size: 20px; }

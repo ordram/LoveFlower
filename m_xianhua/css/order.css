@@ -1,0 +1,37 @@
+/* 订单 */
+.order { width: 100%; height: auto; }
+.order .order-title { width: 100%; height: auto; background-color: #fff; }
+.order .order-title .order-title-box { width: 100%; height: auto; border-bottom: 1px solid #e5e5e5; }
+.order .order-title ul li { width: 33.3%; float: left; line-height: 40px; text-align: center; font-size:15px; }
+.order .order-title ul li a { display: inline-block; padding: 0 10px; }
+.order .order-title ul li a.active { color: #ca231c; border-bottom: 2px solid #ca231c; }
+
+.order .order-content { width: 100%; height: auto; }
+.order .order-content .order-content-box { width: 100%; height: auto; display: none; }
+.order .order-content .order-content-box:first-child { display: block; }
+.order .order-content .order-content-box .order-box { background-color: #fff; padding: 0 10px; margin-bottom: 10px; }
+.order .order-content .order-content-box .order-box ul { overflow: hidden; width: 100%; height: auto; }
+.order .order-content .order-content-box .order-box ul li { width: 100%; border-bottom: 1px solid #eee; padding: 10px 0; overflow: hidden; }
+.order .order-content .order-content-box .order-box ul li div { float: left; text-align: center; line-height: 44px; }
+.order .order-content .order-content-box .order-box ul li div.order-box-01 { width: 20%; }
+.order .order-content .order-content-box .order-box ul li div.order-box-01 img { width: auto; height: 45px; margin: 0 auto; }
+.order .order-content .order-content-box .order-box ul li div.order-box-02 { width: 50%; }
+.order .order-content .order-content-box .order-box ul li div.order-box-02 p { text-align: left; line-height: 22px; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical; }
+.order .order-content .order-content-box .order-box ul li div.order-box-03 { width: 15%; }
+.order .order-content .order-content-box .order-box ul li div.order-box-04 { width: 15%; }
+.order .order-content .order-content-box .order-box .order-box-bot { padding: 10px 0; overflow: hidden; line-height: 28px; }
+.order .order-content .order-content-box .order-box .order-box-bot button { font-size: 14px; color: #ca231c; border-color: #ca231c; background-color: transparent; padding: 5px 10px; float: right; }
+
+
+/* 我的积分 */
+.integral { background-color: #fff; padding: 20px 10px; margin-bottom: 10px; }
+.integral h3 { font-size: 20px; font-weight: 500; margin-bottom: 5px; }
+.integral h3 e { color: #ca231c; }
+.integral p { font-size: 14px; overflow: hidden; }
+.integral p e { float: left; }
+.integral p e:first-child { width: 10px; }
+.integral p e:last-child { width: calc(100% - 10px); }
+
+.integral-box .integral-Num { float: right; width: 50px; }
+.integral-box .integral-Num p { line-height: 15px; }
+.integral-box .order-content .order-content-box .order-box .order-box-bot span { line-height: 30px; }

@@ -1,0 +1,72 @@
+/* 全局样式 */
+
+/* 页面初始化样式 */
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  /* 清除浏览器高亮效果 */
+}
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+  /* 第二个是手机默认的字体 */
+  color: #333;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  /*  解决IE浏览器下点击出现虚线框问题 */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,textarea,button {
+  border: none;
+  /* 清除默认边框 */
+  resize: none;
+  /* 禁止伸缩 */
+  outline: none;
+  /* 清除默认选中效果框(蓝色光环) */
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.am-btn-danger { background-color: #ca231c; border-color: #ca231c; }
+.am-tabs-bd { user-select: inherit!important; }
+
+img{max-width: 100%;}
+p { margin: 0;}
+h3 { margin: 0;}
+
+/* webkit, opera, IE9 */
+::selection { background:#d71e06; color: #fff; }
+::-moz-selection { background:#d71e06; color: #fff; }
+
+/* /页面初始化样式 */
+.yuerso_main { max-width: 640px; position: relative; margin: 49px auto 45px auto; }
+.clearfix { clear: both; }
+

@@ -1,0 +1,74 @@
+/* 全局样式 */
+
+/* 页面初始化样式 */
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  /* 清除浏览器高亮效果 */
+}
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+  /* 第二个是手机默认的字体 */
+  color: #333;
+  min-width: 1250px;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  /*  解决IE浏览器下点击出现虚线框问题 */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  border: none;
+  /* 清除默认边框 */
+  resize: none;
+  /* 禁止伸缩 */
+  outline: none;
+  /* 清除默认选中效果框(蓝色光环) */
+}
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.am-tabs-bd { user-select: inherit!important; }
+
+img{max-width: 100%;}
+p { margin: 0;}
+h3 { margin: 0;}
+
+/* webkit, opera, IE9 */
+::selection { background:#d71e06; color: #fff; }
+::-moz-selection { background:#d71e06; color: #fff; }
+
+/* /页面初始化样式 */
+
+.container { width: 1200px; margin: 0 auto; overflow: hidden; }
+.am-breadcrumb { width: 100%; padding: 30px 0 20px 0; font-size: 14px; margin: 0; }
+.am-form input[type=number]:focus, .am-form input[type=search]:focus, .am-form input[type=text]:focus, .am-form input[type=password]:focus, .am-form input[type=datetime]:focus, .am-form input[type=datetime-local]:focus, .am-form input[type=date]:focus, .am-form input[type=month]:focus, .am-form input[type=time]:focus, .am-form input[type=week]:focus, .am-form input[type=email]:focus, .am-form input[type=url]:focus, .am-form input[type=tel]:focus, .am-form input[type=color]:focus, .am-form select:focus, .am-form textarea:focus, .am-form-field:focus { border-color: #e3393c; box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(220,129,130,.3);}
+

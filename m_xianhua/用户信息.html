@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+  />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>用户信息</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="./images/logoicon.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="./images/logoicon.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="apple-touch-icon-precomposed" href="./images/logoicon.png">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="./images/logoicon.png">
+  <meta name="msapplication-TileColor" content="#d71e06">
+  <link rel="stylesheet" href="./css/amazeui.min.css">
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+  <div class="yuerso_main">
+    <div class="container-head">
+      <header data-am-widget="header" class="am-header am-header-default">
+        <div class="am-header-left am-header-nav">
+          <a href="#">
+            <i class="am-header-icon am-icon-chevron-left"></i>
+          </a>
+        </div>
+        <h1 class="am-header-title">
+          <a href="#">
+            用户信息
+          </a>
+        </h1>
+        <div class="am-header-right am-header-nav">
+          <a href="javascript:;">
+            保存
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <!-- 用户信息 -->
+    <div class="user-login">
+      <ul>
+        <li>
+          <div class="user-login-l">
+            <p>头像</p>
+          </div>
+          <div class="user-login-r">
+            <img src="https://placehold.jp/60x60.png" />
+            <input type="file" id="doc-ipt-file-1">
+          </div>
+        </li>
+        <li>
+          <div class="user-login-l">
+            <p>用户名</p>
+          </div>
+          <div class="user-login-r">
+            <input type="text" id="doc-ipt-3" placeholder="请输入用户名">
+          </div>
+        </li>
+        <li>
+          <div class="user-login-l">
+            <p>性别</p>
+          </div>
+          <div class="user-login-r">
+            <select id="doc-select-1">
+              <option value="保密">保密</option>
+              <option value="男">男</option>
+              <option value="女">女</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="user-login-l">
+            <p>电子邮箱</p>
+          </div>
+          <div class="user-login-r">
+            <input type="text" id="doc-ipt-3" placeholder="请输入电子邮箱">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="user user-opera">
+      <div class="user-bot">
+        <ul>
+          <li><a href="#">
+            <div class="user-bot-list">
+              <span>修改密码</span>
+              <i class="am-icon am-icon-angle-right am-icon-fr"></i>
+            </div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <!-- 底部导航 -->
+    <div class="menu">
+      <ul>
+        <li><a href="#">
+          <i></i>
+          <p>首页</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>分类</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>客服</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>购物车</p>
+        </a></li>
+        <li class="active"><a href="#">
+          <i></i>
+          <p>我的</p>
+        </a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/amazeui.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/custom.js"></script>
+
+</body>
+
+</html>

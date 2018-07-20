@@ -1,0 +1,24 @@
+/* 全部分类 */
+.classify { width: 100%; height: calc(100% - 94px); overflow: hidden; }
+.classify .classify-l { width: 30%; float: left; }
+.classify .classify-l ul { width: 100%; height: 200%; overflow-x: scroll; }
+.classify .classify-l ul li { width: 100%; border-bottom: 1px solid #f3f3f3; }
+.classify .classify-l ul li:last-child { border-bottom: none; }
+.classify .classify-l ul li a { width: 100%; line-height: 40px; font-size: 14px; display: block; text-align: center; color: #333; box-sizing: content-box; }
+.classify .classify-l ul li a.active { color: #ca231c; background-color: #fff; font-weight: bold; }
+
+
+.classify .classify-r { width: 70%; float: right; background-color: #f3f3f3; }
+.classify .classify-r .classify-r-box { width: 100%; background-color: #fff; }
+.classify .classify-r .classify-r-box .classify-r-title { width: 100%; background-color: #fff; display: flex; padding: 10px 15px; }
+.classify .classify-r .classify-r-box .classify-r-title img { height: 20px; }
+.classify .classify-r .classify-r-box .classify-r-title h3 { font-size: 14px; margin-left: 5px; line-height: 20px; color: #333; }
+
+.classify .classify-r div.classify-r-box { display: none; }
+.classify .classify-r div.classify-r-box:first-child { display: block; }
+.classify .classify-r .classify-r-box ul { width: 100%; padding: 15px; overflow-x: scroll; height: 200%; }
+.classify .classify-r .classify-r-box ul li { text-align: center; }
+.classify .classify-r .classify-r-box ul li:nth-child(2n+1) { padding-right: 7.5px; }
+.classify .classify-r .classify-r-box ul li:nth-child(2n+2) { padding-left: 7.5px; }
+.classify .classify-r .classify-r-box ul li img { width: 80%; }
+.classify .classify-r .classify-r-box ul li p { width: 100%; line-height: 25px; margin-bottom: 5px; font-size: 12px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

@@ -1,0 +1,35 @@
+.shopList .shopList-list { width: 100%; padding: 10px 0; }
+.shopList .shopList-list ul { width: 100%; height: auto; }
+.shopList .shopList-list ul li { width: 25%; float: left; text-align: center; font-size: 16px; }
+.shopList .shopList-list ul li a { color: #4c4c4c; }
+.shopList .shopList-list ul li a.active { color: #ca231c; }
+
+.filter { position: fixed; z-index: 9999; right: -260px; top: 0; width: 260px; background-color: #fff; padding: 30px 10px; height: 100%; }
+.filter .filter-box { width: 100%; height: auto; margin-bottom: 20px;  }
+.filter .filter-box .filter-box-title { width: 100%; margin-bottom: 7px; line-height: 24px; }
+.filter .filter-box .filter-box-title span { font-size: 15px; }
+.filter .filter-box .filter-box-title i { font-size: 16px; float: right; }
+.filter .filter-box .filter-box-content { width: 100%; }
+.filter .filter-box .filter-box-content ul { width: 100%; }
+.filter .filter-box .filter-box-content ul li { width: calc(100%/3 - 6.66px); margin-right: 10px; text-align: center; float: left; margin-bottom: 10px; }
+.filter .filter-box .filter-box-content ul li a { display: block; line-height: 35px; background-color: #f4f4f4; border-radius: 3px; }
+.filter .filter-box .filter-box-content ul li a.active { background-color: #ca231c; color: #fff; }
+.filter .filter-box .filter-box-content ul li:nth-child(3n+3) { margin-right: 0; }
+.filter .filter-box .filter-box-content.filter-type { height: 90px; overflow: hidden; }
+.filter .filter-box .filter-box-content.filter-price ul li input { border: none; background-color: #f4f4f4; font-size: 14px; line-height: 21px; text-align: center; }
+.filter .filter-box .filter-box-content.filter-price ul li:nth-child(2) { color: #8b8b8b; background-color: transparent; line-height: 35px; }
+.filter .filter-box .filter-box-content.filter-price button { float: right; margin-top: 20px; padding: .5em 1.5em; }
+
+
+/* 搜索 */
+.search-box { width: 100%; height: auto; position: relative; padding: 15px 10px 10px; }
+.search-box input { width: 80%; padding: 0.47em 2.5em 0.45em 2.5em; font-size: 1.4rem; color: #666; border: none; float:left; }
+.search-box i { position: absolute; left: 22px; top: 18px; color: #666; }
+.search-box button { float: right; padding: 5.5px 14px; font-size: 14px; }
+
+.search-list { width: 100%; height: auto; padding: 0 10px; }
+.search-list .search-title { margin-bottom: 10px; margin-top: 10px; }
+.search-list .search-title span { font-size: 16px; }
+.search-list ul { width: 100%; height: auto; }
+.search-list ul li { float: left; margin-right: 10px; margin-bottom: 10px; }
+.search-list ul li a { font-size: 14px; }

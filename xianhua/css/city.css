@@ -1,0 +1,10 @@
+/* 城市分站 */
+.xh-top-headnav { border-bottom: 3px solid #d71e06; }
+.city-content { width: 100%; height: auto; padding: 30px 0; }
+.city-content .city-box { width: 100%; overflow: hidden; }
+.city-content .city-box .city-box-l { width: 145px; float: left; line-height: 30px; text-align: right; }
+.city-content .city-box .city-box-l h3 { font-size: 16px; display:inline-block; }
+.city-content .city-box .city-box-r { width: 1055px; float: left; }
+.city-content .city-box .city-box-r ul { width: 100%; overflow: hidden; }
+.city-content .city-box .city-box-r ul li { float: left; margin-right: 15px; font-size: 16px; line-height: 30px; }
+.city-content .city-box .city-box-r ul li a:hover { color: #d71e06; }

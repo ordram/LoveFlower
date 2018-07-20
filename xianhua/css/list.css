@@ -1,0 +1,47 @@
+/* 列表 */
+.xh-list-title { width: 100%; background-color: #e6e6e6; padding: 15px 20px 11px 20px; overflow: hidden; line-height: 18px; margin-bottom: 20px; }
+.xh-list-title .xh-list-title-l { float: left; }
+.xh-list-title .xh-list-title-l ul { overflow: hidden; }
+.xh-list-title .xh-list-title-l ul li { float: left; margin-right: 20px; }
+.xh-list-title .xh-list-title-l .list-down { background-image: url(../images/list-down.png); width: 9px; height: 9px; display: inline-block; }
+.xh-list-title .xh-list-title-r { float: right; }
+.xh-list-title .xh-list-title-r > span { float: left; margin-right: 30px; }
+.xh-list-title .xh-list-title-r ul { overflow: hidden; }
+.xh-list-title .xh-list-title-r ul li { float: left; margin-right: 10px; }
+.xh-list-title .xh-list-title-r ul li:last-child { margin-right: 0; }
+.xh-list-title .xh-list-title-r .list-left,.xh-list-title .xh-list-title-r .list-right { background-image: url(../images/icon-left.png); width: 18px; height: 18px; display: inline-block; }
+.xh-list-title .xh-list-title-r .list-right { background-image: url(../images/icon-right.png); }
+.xh-list-title .xh-list-title-r e { color: #d71e06; }
+
+.xh-list-content { width: 100%; height: auto; }
+.xh-list-content ul { width: 100%;  height: auto; overflow: hidden; }
+.xh-list-content ul li { position: relative; width: calc(100%/4 - 7.5px); height: auto; margin-right: 10px; margin-top: 10px; border: 1px solid #e5e5e5; float: left; padding: 20px 10px; }
+.xh-list-content ul li .icon-collect { background-image: url(../images/icon-collect.png); width: 34px; height: 35px; display: inline-block; position: absolute; right: 17px; top: 12px; opacity: 0; }
+.xh-list-content ul li:nth-child(4n+4) { margin-right: 0; }
+.xh-list-content ul li:nth-child(1),.xh-list-content ul li:nth-child(2),.xh-list-content ul li:nth-child(3),.xh-list-content ul li:nth-child(4) { margin-top: 0; }
+.xh-list-content ul li .xh-list-content-box { width: 100%; }
+.xh-list-content ul li .xh-list-content-box img { width: 100%; height: 255px; padding: 0 45px; }
+.xh-list-content ul li .xh-list-content-box p { padding: 15px 10px 10px 10px; margin-top: 30px; border-top: 1px solid #e5e5e5; overflow: hidden; }
+.xh-list-content ul li .xh-list-content-box p b { color: #d71e06; float: left; }
+.xh-list-content ul li .xh-list-content-box p e { color: #838383; float: right; }
+.xh-list-content ul li .xh-list-content-box h3 { background-color: #e5e5e5; color: #656565; padding: 5px 10px; margin-bottom: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.xh-list-content ul li .xh-list-content-box span { color: #6e6e6e; font-size: 14px; text-align: left; padding: 0 10px; display: inline-block; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.xh-list-content ul li .xh-list-content-box span.buy-top { margin-top: 10px; }
+.xh-list-content ul li .xh-list-content-box span.buy-top strong { line-height: 28px; }
+.xh-list-content ul li .xh-list-content-box span.buy-top strong:hover { color: #d71e06; }
+.xh-list-content ul li .xh-list-content-box span.buy-top button { float: right; padding: 5px 10px; font-size: 14px; background-color: #d71e06; border-color: #d71e06; }
+
+.am-pagination { margin: 40px 0; }
+.am-pagination>.am-active>a, .am-pagination>.am-active>a:focus, .am-pagination>.am-active>a:hover, .am-pagination>.am-active>span, .am-pagination>.am-active>span:focus, .am-pagination>.am-active>span:hover { background-color: #d71e06; border-color: #d71e06; }
+
+
+/* 搜索页 */
+.search-classify { width: 100%; height: auto; margin-bottom: 20px; }
+.search-classify .x_selectorLine { width: 100%; height: auto; }
+.search-classify .x_selectorLine .sl-wrap { width: 100%; height: auto; overflow: hidden; line-height: 36px; }
+.search-classify .x_selectorLine .sl-wrap .sl-key { width: 60px; height: auto; float: left; text-align: right; padding-right: 5px; }
+.search-classify .x_selectorLine .sl-wrap .sl-value { width: 1140px; height: auto; float: left; }
+.search-classify .x_selectorLine .sl-wrap .sl-value ul { width: 100%; height: auto; }
+.search-classify .x_selectorLine .sl-wrap .sl-value ul li { float: left; margin-right: 24px; }
+.search-classify .x_selectorLine .sl-wrap .sl-value ul li a:hover,.search-classify .x_selectorLine .sl-wrap .sl-value ul li a:focus { color: #d71e06; }
+/* 搜索页 */

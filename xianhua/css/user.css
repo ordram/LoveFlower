@@ -1,0 +1,54 @@
+/* 个人中心 */
+.long-title { cursor: pointer; }
+.shopNav { border-bottom: 3px solid #d71e06; }
+.slideall { height: auto; padding-top: 46px; }
+#nav { display: none; padding-top: 3px; }
+
+.user-contact { width: 100%; height: auto; }
+.user-contact .user-contact-l { width: 230px; height: auto; float: left; }
+.user-contact .user-contact-l .user-contact-wrap { width: 100%; height: auto; margin-top: 30px; }
+.user-contact .user-contact-l div.user-contact-wrap:first-child { margin-top: 0; }
+.user-contact .user-contact-l h3 { width: 100%; font-size: 20px; color: #d71e06; margin-bottom: 10px; }
+.user-contact .user-contact-l ul li { width: 100%; height: auto; font-size: 16px; line-height: 30px; }
+.user-contact .user-contact-l ul li ul { width: 100%; height: auto; padding-left: 10px; margin: 0; }
+.user-contact .user-contact-l ul li ul li { width: 100%; height: auto; }
+.user-contact .user-contact-l ul li a.active { color: #d71e06; }
+
+.user-contact .user-contact-r { border: 1px solid #e5e5e5; width: 970px; float: left; padding: 30px 15px; }
+.user-contact .user-contact-r .user-contact-user { width: 100%; overflow: hidden; border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-l { width: 50%; float: left; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-l .user-contact-user-ll { width: 40%; float: left; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-l .user-contact-user-ll img { border-radius: 50%; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-l .user-contact-user-lr { line-height: 30px; margin-top: 49px; width: 60%; float: left; padding-left: 20px; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-l .user-contact-user-lr h3 { font-size: 18px; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-r { width: 50%; float: left; line-height: 30px; margin-top: 49px; padding-left: 80px; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-r p b { color: #d71e06; }
+.user-contact .user-contact-r .user-contact-user .user-contact-user-r p span { color: #c3c3c3; }
+
+
+.user-contact .user-contact-r .user-contact-box { width: 100%; position: relative; overflow: hidden; }
+.user-contact .user-contact-r .user-contact-box span { margin-top: 30px; font-size: 18px; display: inline-block; margin-bottom: 20px; }
+.user-contact .user-contact-r .user-contact-box .user-contact-avaor-update * { float: left; }
+.user-contact .user-contact-r .user-contact-box .user-contact-avaor-update img { width: 160px; }
+.user-contact .user-contact-r .user-contact-box .user-contact-avaor-update button { position: absolute; bottom: 0; margin-left: 20px; }
+.user-contact .user-contact-r .user-contact-box .user-contact-avaor-update input { position: absolute; bottom: 0; left: 180px;width: 120px; height: 37px;opacity: 0; }
+.user-contact .user-contact-r .user-contact-box .am-u-sm-6 { padding-left: 20px; }
+.user-contact .user-contact-r .user-contact-box label { font-size: 16px; color: #606060; font-weight: 400; padding-top: 6px; }
+.am-checkbox input[type=checkbox], .am-checkbox-inline input[type=checkbox], .am-radio input[type=radio], .am-radio-inline input[type=radio] { margin-top: 6px; }
+
+
+/* 我的积分 */
+.user-contact .user-contact-r .user-contact-points { width: 100%; height: auto; }
+.user-contact .user-contact-r .user-contact-points h3 { font-size: 20px; margin-bottom: 10px; }
+.user-contact .user-contact-r .user-contact-points h3 e { color: #d71e06; }
+.user-contact .user-contact-r .user-contact-points .user-contact-points-top p { font-size: 16px; line-height: 30px; }
+.user-contact .user-contact-r .user-contact-points .user-contact-points-bot { margin-top: 30px; }
+
+
+/* 我的收藏 */
+.user-contact-collect > h3 { font-size: 20px; margin: 10px 0 20px 0; }
+.user-contact-collect .xh-list-content ul li { width: calc(100%/3 - 6.7px); }
+.user-contact-collect .xh-list-content ul li:nth-child(3n+3) { margin-right:0; }
+.xh-list-content ul li:nth-child(4n+4) { margin-top: 10px; margin-right: 10px; }
+.user-contact-collect .xh-list-content ul li .xh-list-content-box p { margin-top: 12px; }
+.user-contact-collect .xh-list-content ul li .xh-list-content-box p a:last-child { float: right; }

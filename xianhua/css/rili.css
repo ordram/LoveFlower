@@ -1,0 +1,54 @@
+
+.block_box{width:520px; float: left; height:auto;}
+
+/* .userinfo_div{position:fixed; top:100px; left:0; z-index:99;} */
+.userinfo_box{width:100%; height:auto;}
+.userinfo_box .complaint_header{width:915px; height:35px; background:#E5E5E5; line-height:35px; font-size:14px; color:#333333;font-family:"Microsoft Yahei"; padding-left:10px;}
+.userinfo_box .complaint_header span{font-size:22px; color:#a0a0a0;font-family:"Microsoft Yahei"; font-weight:600; margin-right:15px; cursor:pointer;}
+.userinfo_box .userinfo{ padding-right:0; max-height:450px; }
+.userinfo_box .userinfo .invoice-table{width:100%;}
+.userinfo_box .userinfo .invoice-table tr td{color:#666;vertical-align: center;font-size: 13px;}
+.userinfo_box .userinfo .invoice-table tr td font{color:#d71e06}
+.userinfo_box .userinfo .invoice-txt{border:1px solid #E6E6E6; padding:.5em 1em; color:#666; margin-right:15px; resize:none;}
+.userinfo_box .userinfo .checkbox{width:16px; height:16px; vertical-align:-4px;}
+.userinfo_box .userinfo label.error{background:url(../images/error.jpg) 0 0 no-repeat; height:23px; padding-left:18px; color:#666; font-size:12px; color:#d71e06; /*display:none;*/}
+.userinfo_box .userinfo .userinfo-select{height:26px; border:1px solid #E6E6E6; color:#666; padding:3px 5px; line-height:26px; margin-right:10px;}
+.userinfo_box .userinfo .userinfo-select option{color:#666;}
+.userinfo_box .userinfo .brEB6619{border-color:#d71e06;}
+.userinfo_box .userinfo .store_list{width:668px; height:auto; overflow:hidden; margin-top:10px;}
+.userinfo_box .userinfo .store_list .page{text-align:right; margin-right:57px;}
+.userinfo_box .userinfo .store_list .page a{font-size:12px; color:#666; margin-left:10px;}
+.userinfo_box .userinfo .store_list .page a:hover{color:#FA1D63;}
+.userinfo_box .userinfo .store_list .bai_map{width:305px; height:305px; border:1px solid #E6E6E6;}
+.userinfo_box .userinfo .store_list .store{width:350px; height:310px;}
+.userinfo_box .userinfo .store_list .store ul li{width:290px; height:47px; border:1px solid #E6E6E6; padding:4px 0; margin-bottom:5px; cursor:pointer;}
+.userinfo_box .userinfo .store_list .store ul li .store_img{width:47px; height:47px; overflow:hidden; margin-left:6px;}
+.userinfo_box .userinfo .store_list .store ul li .store_info{width:200px; height:47px; overflow:hidden; margin-left:5px;}
+.userinfo_box .userinfo .store_list .store ul li .store_info p{line-height:15px; color:#555;}
+.userinfo_box .userinfo .store_list .store ul li .store_info p.storename soap{width: 139px; height: 15px; overflow: hidden; display: block; white-space: nowrap; float: left; text-overflow: ellipsis;}
+.userinfo_box .userinfo .store_list .store ul li .store_info p span{float:right; width: 61px; color:#f7611f;}
+.userinfo_box .userinfo .store_list .store ul li .store_info p.pinjia{color:#999;}
+.userinfo_box .userinfo .store_list .store ul li .over_div{display:none;}
+.userinfo_box .userinfo .store_list .store ul li.cur{border-color:#f7611f;}
+.userinfo_box .userinfo .store_list .store ul li.cur .over_div{width:57px; height:49px; background:#f7611f; display:block; margin-top:-5px; margin-left:290px; color:#fff; font-size:14px; font-family:"Microsoft Yahei"; cursor:pointer; text-align:center; padding-top:8px; line-height:20px;}
+.userinfo_box .userinfo .store_list .store ul li.over{border-color:#f7611f;}
+.userinfo_box .userinfo a.invoice-btn{width:108px; height:30px; border:1px solid #E6E6E6; display:block; text-align:center; line-height:30px; background:#FDFDFD; color:#555; margin:8px 0; font-size:14px; font-weight:600;}
+.userinfo_box .userinfo a.invoice-btn:hover{color:#fff; background:#FA1D63}
+.userinfo_box .dateacd{margin-bottom: 0;}
+
+.order_shiduan{position:absolute; border:1px solid #E6E6E6; width:178px; border-top:none; z-index:1; background:#fff;}
+.order_shiduan .shiduan_t_list li{width:93px; float:left; text-align:center; line-height:25px; border-right:1px solid #E6E6E6; border-bottom:1px solid #fff; cursor:pointer;}
+.order_shiduan .shiduan_t_list li.cur{border-bottom:1px solid #E6E6E6;}
+.order_shiduan .li_shiduan{width:178px; height:auto; overflow:hidden;}
+.order_shiduan .li_shiduan ul li{float:left; width:94px; line-height:25px; text-align:center; cursor:pointer;}
+.order_shiduan .li_dingshi{width:178px; height:auto; overflow:hidden; padding:10px 0; text-align:center;}
+.order_shiduan .li_dingshi .userinfo-select{margin-right:0; margin-bottom:10px;}
+.order_shiduan .li_dingshi p{text-align:left; padding-left:25px; width:140px; color:#d71e06}
+.userinfo_div .radio{vertical-align: -2px;}
+.userinfo_div .radio_txt{color:#d71e06; margin-left:8px;}
+/*.layer .fl a{margin-left:5px;color:#fc1d5e; float:right;}
+.layer .fl img{margin-bottom:3px;}*/
+table.invoice-table tr td{
+ height:30px;
+}
+.BMapLabel{color:#fff;width:20px;text-align:center;height:25px;background:url('../images/marker_red_sprite.png') no-repeat;}

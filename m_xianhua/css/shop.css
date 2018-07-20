@@ -1,0 +1,23 @@
+/* 支付购买 */
+.collect ul { background-color: transparent; padding: 10px; }
+.collect ul li { background-color: #fff; margin-bottom: 10px; border-radius: 5px; }
+.collect ul li .collect-box .collect-box-l { width: 100px; }
+.collect ul li .collect-box .collect-box-l img { height: 90px; max-width: 90px; }
+.collect ul li .collect-box .collect-box-r { width: calc(100% - 130px); height: 90px; }
+
+.collect ul li .collect-box .choose-up { width: 30px; height: 90px; line-height: 90px; float: left; text-align: center; }
+.collect ul li .collect-box .choose-up i { display: inline-block; width: 25px; height: 25px; background-image: url(../images/address_icon.png); background-position: -4px -4px;  background-size: 65px; }
+.collect ul li .collect-box.active .choose-up i { background-position: -36px -4px; }
+/* .collect ul li .collect-box .collect-box-r p { line-height: 28px; } */
+.collect ul li .collect-box .collect-box-r p .jisuan { float: right; }
+.collect ul li .collect-box .collect-box-r p .am-btn { float: none; width: 25px; text-align: center; padding: 0; }
+
+
+.settle { position: fixed; bottom: 0; left: 0; width: 100%; background-color: #fff; padding: 10px; overflow: hidden; line-height: 37px; }
+.settle .settle-l { float: left; }
+.settle .settle-l i { float: left; margin-top: 6px; width: 25px; height: 25px; margin-right: 3px; background-image: url(../images/address_icon.png); background-position: -4px -4px;  background-size: 65px; }
+.settle .settle-l i.active { background-position: -36px -4px; }
+.settle .settle-r { float: right; }
+.settle .settle-r span { margin-right: 15px; float: left; }
+.settle .settle-r span e { color: #ca231c; }
+.settle .settle-r button { padding: .5em 1.5em; border: none; float: right; }

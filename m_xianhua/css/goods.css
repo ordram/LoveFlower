@@ -1,0 +1,41 @@
+.goods { padding: 15px 0 5px; }
+.login { padding-top: 0; }
+.login .am-u-sm-12 .am-u-sm-3 p { line-height: 35px; font-size: 16px; color: #999; }
+.login .am-u-sm-12 .am-u-sm-3 p span { border: 1px solid #e6e6e6; padding: 4px 10px; position: relative; }
+.login .am-u-sm-12 .am-u-sm-3 p span.active { border-color: #ca231c;  }
+.login .am-u-sm-12 .am-u-sm-3 p span.active::after { content: ''; position: absolute; width: 10px; height: 10px; font-size: 0; line-height: 0; right: 0px;  bottom: 0px; background: url(../images/sys_item_selected.gif) no-repeat right bottom; }
+
+.user { margin-bottom: 10px; padding-top: 0; }
+.user .user-bot ul li div.user-bot-list { width: 100%; position: relative; }
+.user .user-bot ul li div.user-bot-list b { position: absolute; right: 0; top: 0; line-height: 46px; padding-right: 20px; color: #ca231c; font-size: 13px; }
+.user .user-bot ul li div.user-bot-list b e { color: #c6c6c6; font-size: 13px; font-weight: 500; }
+.user .user-bot ul li div.user-bot-list span e { font-size: 12px; }
+
+.order .order-content .order-content-box .order-box .order-box-bot span { font-size: 12px; }
+.order .order-content .order-content-box .order-box .order-box-bot span e { font-size: 15px; }
+.order .order-content .order-content-box .order-box .order-box-bot strong { float: right; }
+
+.user .user-bot ul li div.user-bot-list i.am-icon-btn { display: inline-block; width: 25px; height: 25px; background-image: url(../images/address_icon.png); background-position: -4px -4px;  background-size: 65px; }
+.user .user-bot ul li div.user-bot-list i.am-icon-btn.active { background-position: -36px -4px; }
+
+
+/* 送达时间 */
+.serDate-box { position: fixed; left: 0; bottom: -260px; width: 100%; height: auto; z-index: 9999; background-color: #fff; padding-bottom: 15px; }
+.serDate-box .login .login-box div.am-form-group:first-child { border-top: none; }
+.serDate-box .login .login-box .am-form-group select { border: none; }
+.serDate-box .serDate-title { width: 100%; background-color: #f2f2f2; }
+.serDate-box .serDate-title p { width: 100%; text-align: center; line-height: 40px; font-size: 16px; }
+
+.serDate-box .login .login-box .am-form-group .li_dingshi select { width: 30%; display: inline-block; }
+
+
+/* 支付方式 */
+.serPay-box { position: fixed; left: 0; bottom: -260px; width: 100%; height: auto; z-index: 9999; background-color: #fff; padding-bottom: 50px; }
+.serPay-box .login .login-box div.am-form-group:first-child { border-top: none; }
+.serPay-box .login .login-box .am-form-group select { border: none; }
+.serPay-box .serDate-title { width: 100%; background-color: #f2f2f2; }
+.serPay-box .serDate-title p { width: 100%; text-align: center; line-height: 40px; font-size: 16px; }
+
+.serPay-box .login .login-box .am-form-group .li_dingshi select { width: 30%; display: inline-block; }
+.serPay-box .user .user-bot ul li div.user-bot-list { width: calc(100% - 45px); }
+.serPay-box .user .user-bot ul li a i { background-size: 24px; background-position: 0 0; background-repeat: no-repeat; }

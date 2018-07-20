@@ -1,0 +1,9 @@
+/*响应式样式*/
+
+/* iphone 5 */
+@media (max-width: 350px) {
+  .shopNav .shopNav-box ul li { padding: 0 9px; }
+
+  .filter .filter-box  { margin-bottom: 0; }
+  .order .order-content .order-content-box .order-box .order-box-bot { font-size: 12px; }
+}

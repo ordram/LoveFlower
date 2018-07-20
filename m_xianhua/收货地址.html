@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+  />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>收货地址</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="./images/logoicon.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="./images/logoicon.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="apple-touch-icon-precomposed" href="./images/logoicon.png">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="./images/logoicon.png">
+  <meta name="msapplication-TileColor" content="#d71e06">
+  <link rel="stylesheet" href="./css/amazeui.min.css">
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+  <div class="yuerso_main">
+    <div class="container-head">
+      <header data-am-widget="header" class="am-header am-header-default">
+        <div class="am-header-left am-header-nav">
+          <a href="#">
+            <i class="am-header-icon am-icon-chevron-left"></i>
+          </a>
+        </div>
+        <h1 class="am-header-title">
+          <a href="#">
+            收货地址
+          </a>
+        </h1>
+        <div class="am-header-right am-header-nav">
+          <a href="javascript:;" class="addressAdd">
+            新增地址
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <!-- 收货地址 -->
+    <div class="address">
+      <ul>
+        <li class="active">
+          <div class="address-box">
+            <p>收货人：<e>张女士</e></p>
+            <p>所在地区：<e>湖北 > 武汉 > 武昌区</e></p>
+            <p>地址：<e>中山大道金涛铭座1804</e></p>
+            <p>手机：<e>12345678910</e></p>
+            <i></i>
+          </div>
+        </li>
+        <li>
+          <div class="address-box">
+            <p>收货人：<e>张女士</e></p>
+            <p>所在地区：<e>湖北 > 武汉 > 武昌区</e></p>
+            <p>地址：<e>中山大道金涛铭座1804</e></p>
+            <p>手机：<e>12345678910</e></p>
+            <i></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 新增地址 -->
+    <div class="cover cover01"></div>
+    <div class="addressAdd-box">
+      <div class="login">
+        <div class="login-box">
+          <form class="am-form am-form-horizontal">
+            <div class="am-form-group">
+              <div class="am-u-sm-12">
+                <input type="text" id="doc-ipt-3" placeholder="联系人">
+              </div>
+            </div>
+            
+            <div class="am-form-group">
+              <div class="am-u-sm-12">
+                <input type="number" id="doc-ipt-3" placeholder="电话">
+              </div>
+            </div>
+            
+            <div class="am-form-group">
+              <div class="am-u-sm-12">
+                <div class="am-u-sm-4">
+                  <select id="doc-select-1">
+                    <option>选择省</option>
+                    <option value="湖北">湖北</option>
+                    <option value="河北">河北</option>
+                  </select>
+                </div>
+                <div class="am-u-sm-4">
+                  <select id="doc-select-1">
+                    <option>选择市</option>
+                    <option value="武汉">武汉</option>
+                    <option value="上海">上海</option>
+                    <option value="深圳">深圳</option>
+                    <option value="南京">南京</option>
+                  </select>
+                </div>
+                <div class="am-u-sm-4">
+                  <select id="doc-select-1">
+                    <option>选择区</option>
+                    <option value="江岸区">江岸区</option>
+                    <option value="江汉区">江汉区</option>
+                    <option value="硚口区">硚口区</option>
+                    <option value="洪山区">洪山区</option>
+                    <option value="武昌区">武昌区</option>
+                    <option value="江夏区">江夏区</option>
+                    <option value="黄陂区">黄陂区</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="am-form-group">
+              <div class="am-u-sm-12">
+                <input type="text" id="doc-ipt-3" placeholder="详细地址">
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+        <div class="login-btn">
+          <button type="submit" class="am-btn am-btn-danger am-btn-block">保存并使用</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- 底部导航 -->
+    <div class="menu">
+      <ul>
+        <li><a href="#">
+          <i></i>
+          <p>首页</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>分类</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>客服</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>购物车</p>
+        </a></li>
+        <li class="active"><a href="#">
+          <i></i>
+          <p>我的</p>
+        </a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/amazeui.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/custom.js"></script>
+
+</body>
+
+</html>

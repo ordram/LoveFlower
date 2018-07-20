@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="./images/logoicon.png">
+  <title>升级你的浏览器</title>
+  <style>
+    /* reset样式 */
+    html{color:#000;background:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+    body{margin:0;padding:0;font:12px/1.5 tahoma,arial,"Hiragino Sans GB","Microsoft Yahei","\5b8b\4f53";min-width:1000px}
+    *{margin:0;padding:0}
+    ul{list-style:none}
+    h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}
+    a,a:active,a:hover,a:link{color:#000}
+    a:hover{text-decoration:none;border-bottom:1px solid #000}
+    a,ins{text-decoration:none}
+    .clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+    .clearfix{zoom:1}
+    .special-header{width:990px;height:60px;margin:0 auto;line-height:60px}
+    ul.menu-list{float:right}
+    ul.menu-list li{display:inline-block;zoom:1;margin-left:10px}
+    span.username{padding-left:10px}
+    .special-main{width:1200px;margin:0 auto;height:630px;text-align:center;min-width:1200px}
+    .special-main h1{font-size:46px;margin-bottom:10px}
+    .special-main p{font-size:25px}
+    ul.special-list li{display:inline-block;zoom:1;width:33%;font-size:18px;line-height:32px;margin-top:92px}
+    ul.special-list li{border-right:1px solid #ebe3dd}
+    ul.special-list li:nth-child(3n+3){border-right:none}
+    a.download-link{display:inline-block;zoom:1;padding-top:140px;width:126px;position:relative}
+    a.download-link:hover{border-bottom:none;color:#08c}
+    .chrome{position:absolute;background:url(./assets/img/browsehappy-sprite.png) no-repeat}
+    .firefox{position:absolute;background:url(./assets/img/browsehappy-sprite.png) no-repeat;background-position:-125px 0;}
+    .opera{position:absolute;background:url(./assets/img/browsehappy-sprite.png) no-repeat;background-position:-250px 0;}
+    .safari{position:absolute;background:url(./assets/img/browsehappy-sprite.png) no-repeat;background-position:-375px 0;}
+    .edge{position:absolute;background:url(./assets/img/browsehappy-sprite.png) no-repeat;background-position:-500px 0;}
+    .ie{position:absolute;background:url(./assets/img/browsehappy-sprite.png) no-repeat;background-position:-625px 0;}
+    .link-close-window,.link-close-window:active,.link-close-window:link{position:relative;top:50px;font-size:24px;color:#08c}
+    .link-close-window:hover{text-decoration:none;border-bottom:1px solid #08c}
+    div.special-footer{width:990px;height:215px;margin:0 auto;padding-top:31px;text-align:center;font-size:12px}
+    ul.footer-list{margin-bottom:10px}
+    ul.footer-list li{display:inline-block;zoom:1;padding:0 7px 0 2px}
+    ul.footer-list li.first{padding-left:0}
+  </style>
+</head>
+
+<body>
+  <div class="special-header clearfix">
+  </div>
+  <div class="special-main">
+    <div class="special-content">
+      <h1>您的浏览器版本太低</h1>
+      <p>为了更佳的展示和阅读效果，建议升级浏览器</p>
+      <ul class="special-list">
+        <li class="first">
+          <a class="download-link chrome" href="https://www.google.cn/chrome/thankyou.html?standalone=1&statcb=0&installdataindex=defaultbrowser" title="chrome浏览器">chrome浏览器</a>
+        </li>
+        <li>
+          <a class="download-link firefox" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win&lang=zh-CN" title="Firefox浏览器">Firefox浏览器</a>
+        </li>
+        <li class="first">
+          <a class="download-link safari" href="http://support.apple.com/downloads/DL1569/zh_CN/Safari5.1.10SnowLeopardManual.dmg" title="Safari浏览器">Safari浏览器</a>
+        </li>
+        <li>
+          <a class="download-link opera" href="https://www.opera.com/download/get/?partner=www&amp;opsys=Windows" title="Opera浏览器">Opera浏览器</a>
+        </li>
+        <li>
+          <a class="download-link edge" href="https://www.microsoft.com/zh-cn/windows/microsoft-edge" title="Microsoft Edge">Microsoft Edge</a>
+        </li>
+        <li>
+          <a class="download-link ie" href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads" title="IE浏览器最新版">IE浏览器最新版</a>
+        </li>
+      </ul>
+      <a class="link-close-window" id="linkCloseWindow" href="javascript:;" title="关闭页面">关闭页面</a>
+      <script>
+        (function () {
+          document.getElementById("linkCloseWindow").onclick = function () {
+            var opened = window.open('about:blank', '_self');
+            opened.opener = null;
+            opened.close();
+          };
+        })();
+      </script>
+    </div>
+  </div>
+  <div class="special-footer">
+  </div>
+</body>
+
+</html>

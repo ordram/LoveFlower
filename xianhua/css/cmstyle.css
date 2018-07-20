@@ -1,0 +1,41 @@
+/* 我的评价 */
+.user-comment .am-margin {margin: 0;}
+.td-item{overflow: hidden;float: left;}
+.item-pic {width:80px;height:80px;border: 1px solid #EEE;float: left;overflow: hidden;margin-left: 3px;}
+.item-pic img{width:100%;}
+.td-comment {margin:0px 0px 0px 85px;padding-right:5px;}
+/*标题*/
+.item-opinion{width:100%;float: left;color: #d71e06;font-size: 14px;}
+.item-name{ margin-left:35px ;}
+.item-title{margin:5px 0px;font-size:14px;}
+
+/* .item-basic-info{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 14px;} */
+.item-comment{font-size:13px ;line-height: 21px;}
+/*商品信息*/
+.item-info{font-size:10px ;color: #9C9C9C; margin-top:5px ;overflow: hidden;}
+.info-little{float: left;max-width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 12px;}
+.info-time{float: right;margin-right: 5px;font-size: 12px;}
+.comment-top{display: none;margin:25px 0px ; overflow: hidden;}
+
+.filePic {width:100px;margin:10px 0px ;}
+.filePic img{width:100%;}
+	
+.am-tabs-bd .am-tab-panel {padding:10px 10px 15px ;}
+.comment-top{display: block;}
+.comment-top .th{float: left;width:50% ; text-align: center;}
+/*标题*/
+.item-title{float: left;width:30%; margin-top: 0px;margin-right:18%;}
+.item-name{margin-left: 0;}
+/* .item-basic-info{overflow: hidden;text-overflow: ellipsis;white-space:normal;font-size:14px ;color: #005EA7;} */
+
+/*商品信息*/
+.td.td-comment{position: relative;overflow: hidden;min-height:65px; padding-left: 12px; }
+/* .item-info .info-little{position: absolute;right:0;top:0px;width:18%; white-space:normal; font-size: 12px;} */
+.info-little span {display: block; float: left; margin-right: 15px; }
+
+/* .item-info .info-time{position: absolute;left:30px;bottom:0px;} */
+
+
+
+/*评价内容*/
+.item-comment{float:left;width:50%;padding-bottom:20px;}

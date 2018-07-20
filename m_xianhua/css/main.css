@@ -1,0 +1,63 @@
+/* 首页 */
+body{ background-color: #f2f2f2; }
+
+/* 头部样式 */
+.container-head{width: 100%; position: fixed; top: 0;left: 0; z-index: 9999; }
+.am-header-default { background-color: #ca231c; }
+.am-header-default .am-header-nav>a { color: #fff; }
+.am-header-default .am-header-nav { color: #fff; }
+.am-header .am-header-left { padding: 0 6px; }
+.am-header .am-header-title { margin: 0 12% 0 19%; position: relative; }
+.am-header .am-header-title .am-form-field { padding: 0.47em 2.5em 0.45em 2.5em; font-size: 1.4rem; margin-top: 10px; color: #666; border: none; }
+.am-header .am-header-title i { position: absolute; left: 8px; color: #dbdbdb; }
+.banner .am-slider-a1 { box-shadow: none; }
+.banner .am-slider-a1 .am-control-nav li a.am-active { background-color: #ca231c; }
+.shopNav { width: 100%; height: auto; background-color: #fff; }
+.shopNav .shopNav-box { width: 100%; height: auto; padding: 20px 10px; overflow: hidden; }
+.shopNav .shopNav-box ul { width: 100%; height: auto; }
+.shopNav .shopNav-box ul li { width: 25%; float: left; padding: 0 15px; text-align: center; }
+.shopNav .shopNav-box ul li:nth-child(1) .shopNav-box-t { background-color: #9aca2b; }
+.shopNav .shopNav-box ul li:nth-child(2) .shopNav-box-t { background-color: #f74e80; }
+.shopNav .shopNav-box ul li:nth-child(3) .shopNav-box-t { background-color: #1dc7a6; }
+.shopNav .shopNav-box ul li:nth-child(4) .shopNav-box-t { background-color: #d71e06; }
+.shopNav .shopNav-box ul li .shopNav-box-t { padding: 15px; border-radius: 5px; }
+.shopNav .shopNav-box ul li .shopNav-box-t img { height: 27px; }
+.shopNav .shopNav-box ul li p { text-align: center; margin-top: 2px; }
+
+.shopList { width: 100%; height: auto; }
+.shopList-t { margin: 20px 0 10px 0; width: 100%; background-color: #fff; padding: 0 20px; overflow-x: scroll; }
+.shopList-t ul { width: 200%; overflow: hidden; }
+.shopList-t ul li { float: left; margin-right: 36px; line-height: 40px; font-size: 14px; }
+.shopList-t ul li a.active { color: #ca231c; }
+
+.shopList-b { width: 100%; height: auto; }
+.shopList-b .shopList-b-box { width: 100%; height: auto; display: none; }
+.shopList-b .shopList-b-box:nth-child(1) { display: block; }
+.shopList-b .shopList-b-box ul li { width: calc(100%/2 - 5px); height: auto; float: left; margin-bottom: 10px; background-color: #fff; text-align: center; }
+.shopList-b .shopList-b-box ul li:nth-child(2n+1) { margin-right: 10px; }
+.shopList-b .shopList-b-box ul li .shopList-b-box-t { padding: 10px; }
+.shopList-b .shopList-b-box ul li .shopList-b-box-t h3 { text-align: left; color: #656565; font-size: 13px; height: 40px; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.shopList-b .shopList-b-box ul li .shopList-b-box-t p { text-align: left; color: #656565; font-size: 12px; margin-top: 5px; }
+.shopList-b .shopList-b-box ul li .shopList-b-box-t p strong { color: #ca231c; margin-right: 10px; font-size: 14px; }
+.shopList-b .shopList-b-box ul li.last-child { background-image: url(../images/gengduo.png); padding: 93px 0; background-size: cover; background-repeat: no-repeat; font-size: 30px; color: #666; }
+.shopList-b .shopList-b-box ul li.last-child i { font-size: 40px; color: #666; }
+.shopList-b .shopList-b-box ul li.last-child p { text-align: center; font-size: 16px; }
+
+
+.menu { width: 100%; position: fixed; bottom: 0; left: 0; background-color: #fff; padding-top: 5px; }
+.menu ul { width: 100%; height: auto; }
+.menu ul li { width: 20%; float: left; text-align: center; }
+.menu ul li.active i { background-position: -20px 0; }
+.menu ul li.active p { color: #ca231c; }
+.menu ul li i { display: block; width: 20px; height: 20px; margin: 0 auto; }
+.menu ul li p { font-size: 12px; line-height: 20px; }
+.menu ul li:nth-child(1) i { background-image: url(../images/menu_01.png); background-repeat: no-repeat; }
+.menu ul li:nth-child(2) i { background-image: url(../images/menu_02.png); background-repeat: no-repeat; }
+.menu ul li:nth-child(3) i { background-image: url(../images/menu_03.png); background-repeat: no-repeat; }
+.menu ul li:nth-child(4) i { background-image: url(../images/menu_04.png); background-repeat: no-repeat; }
+.menu ul li:nth-child(5) i { background-image: url(../images/menu_05.png); background-repeat: no-repeat; }
+
+.funTop {position:fixed;bottom:60px;right:20px;z-index: 998;}
+.funTop a{background-color:#eee;width:30px;height:30px;border-radius:50%;text-align:center;line-height:26px;font-size:22px;}
+
+.cover { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 9998; background-color: rgba(0, 0, 0, 0.3); display: none; opacity: 0; }

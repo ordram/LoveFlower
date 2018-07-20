@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+  />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>确认订单</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="./images/logoicon.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="./images/logoicon.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="apple-touch-icon-precomposed" href="./images/logoicon.png">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="./images/logoicon.png">
+  <meta name="msapplication-TileColor" content="#d71e06">
+  <link rel="stylesheet" href="./css/amazeui.min.css">
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/order.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/goods.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/rili.css"/>
+  <link rel="stylesheet" href="./css/jquery-ui.min.css">
+  <script type="text/javascript" src="./js/jquery.js"></script>
+</head>
+
+<body>
+  <div class="yuerso_main">
+    <div class="container-head">
+      <header data-am-widget="header" class="am-header am-header-default">
+        <div class="am-header-left am-header-nav">
+          <a href="javascript:;">
+            <i class="am-header-icon am-icon-chevron-left"></i>
+          </a>
+        </div>
+        <h1 class="am-header-title">
+          <a href="javascript:;">
+            确认订单
+          </a>
+        </h1>
+      </header>
+    </div>
+
+    <div class="goods">
+      <!-- 收货地址 -->
+      <div class="user title">
+        <div class="user-bot">
+          <ul>
+            <li><a href="javascript:;">
+              <div class="user-bot-list">
+                <span>选择收货人</span>
+                <i class="am-icon am-icon-angle-right am-icon-fr"></i>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="address">
+        <ul>
+          <li class="active">
+            <div class="address-box">
+              <p>收货人：<e>张女士</e></p>
+              <p>所在地区：<e>湖北 > 武汉 > 武昌区</e></p>
+              <p>地址：<e>中山大道金涛铭座1804</e></p>
+              <p>手机：<e>12345678910</e></p>
+              <i></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="user">
+        <div class="user-bot">
+          <ul>
+            <!-- 送达时间 -->
+            <li class="serDate"><a href="javascript:;">
+              <div class="user-bot-list">
+                <span>送达时间</span>
+                <b><strong>2018-06-25</strong>（<strong>全天配送</strong>）</b>
+                <i class="am-icon am-icon-angle-right am-icon-fr"></i>
+              </div>
+            </a></li>
+            <!-- 支付方式 -->
+            <li class="serPay"><a href="javascript:;">
+              <div class="user-bot-list">
+                <span>支付方式</span>
+                <b>支付宝支付</b>
+                <i class="am-icon am-icon-angle-right am-icon-fr"></i>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 订单列表 -->
+      <div class="order">
+        <div class="order-content">
+          <div class="order-content-box">
+            <div class="order-box">
+              <ul>
+                <li>
+                  <div class="order-box-01"><img src="./images/xh-01.png"></div>
+                  <div class="order-box-02"><p>青春如愿 - 香槟玫瑰、蓝色绣花球，桔梗</p></div>
+                  <div class="order-box-03"><span>x1</span></div>
+                  <div class="order-box-04"><b>￥258</b></div>
+                </li>
+                <li>
+                  <div class="order-box-01"><img src="./images/xh-01.png"></div>
+                  <div class="order-box-02"><p>青春如愿 - 香槟玫瑰、蓝色绣花球，桔梗</p></div>
+                  <div class="order-box-03"><span>x1</span></div>
+                  <div class="order-box-04"><b>￥258</b></div>
+                </li>
+              </ul>
+              <div class="order-box-bot">
+                <span><e>定时服务费</e>（定时服务+30元，误差±15分钟）</span>
+                <strong>￥<e>0</e></strong>
+              </div>
+            </div>
+
+            <!-- 是否使用积分 -->
+            <div class="user">
+              <div class="user-bot">
+                <ul>
+                  <li class="jifen"><a href="javascript:;">
+                    <div class="user-bot-list">
+                    <span>是否使用积分</span>
+                    <i class="am-icon-btn"></i>
+                    </div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user">
+              <div class="user-bot">
+                <ul>
+                  <!-- 贺卡内容 -->
+                  <li><a href="javascript:;">
+                    <div class="user-bot-list">
+                      <span>贺卡内容</span>
+                      <b><e>留言、署名</e></b>
+                      <i class="am-icon am-icon-angle-right am-icon-fr"></i>
+                    </div>
+                  </a></li>
+                  <!-- 发票信息 -->
+                  <li><a href="javascript:;">
+                    <div class="user-bot-list">
+                      <span>发票信息<e>（发票邮寄+10元）</e></span>
+                      <i class="am-icon am-icon-angle-right am-icon-fr"></i>
+                    </div>
+                  </a></li>
+                  <!-- 匿名购买 -->
+                  <li class="niming"><a href="javascript:;">
+                    <div class="user-bot-list">
+                    <span>匿名购买</span>
+                    <i class="am-icon-btn"></i>
+                    </div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 送达时间 -->
+    <div class="cover cover02"></div>
+    <div class="serDate-box">
+      <div class="serDate-title">
+        <p>选择配送时段</p>
+      </div>
+      <div class="login">
+        <div class="login-box">
+          <form class="am-form am-form-horizontal">
+            <div class="am-form-group">
+              <div class="am-u-sm-12">
+                <div class="am-u-sm-3">
+                  <p>送达日期</p>
+                </div>
+                <div class="am-u-sm-9">
+                  <div class="block_box userinfo_div" id="userinfo" style="width: 100%">
+                    <div class="userinfo_box">
+                      <div class="userinfo">
+                        <input type="hidden" id="hidaddress_id" value="">
+                        <table cellpadding="0" cellspacing="0" class="invoice-table">
+                          <tr id="order_date_select_tr">
+                            <td width="18%">
+                              <input id="addstart_time" class="invoice-txt" style="width:100%;background-color:transparent;" name="addstart_time" type="text" placeholder="选择配送日期">
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+            
+            <div class="am-form-group">
+              <div class="am-u-sm-12">
+                <div class="am-u-sm-3">
+                  <p>配送时段</p>
+                </div>
+                <div class="am-u-sm-9">
+                  <select id="doc-select-1" style="padding-left:15px;">
+                    <option selected="selected" value="全天配送">全天配送</option>
+                    <option value="上午">上午</option>
+                    <option value="下午">下午</option>
+                    <option value="晚上">晚上</option>
+                    <option value="08:00-10:00">08:00-10:00</option>
+                    <option value="10:00-12:00">10:00-12:00</option>
+                    <option value="12:00-14:00">12:00-14:00</option>
+                    <option value="14:00-16:00">14:00-16:00</option>
+                    <option value="16:00-18:00">16:00-18:00</option>
+                    <option value="18:00-20:00">18:00-20:00</option>
+                    <option value="20:00-22:00">20:00-22:00</option>
+                    <option value="22:00-24:00">22:00-24:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="am-u-sm-12" style="margin-top: 5px;">
+                <div class="am-u-sm-3">
+                  <p><span>定时</span></p>
+                </div>
+                <div class="am-u-sm-9">
+                    <div class="block_box userinfo_div" id="userinfo">
+                        <div class="userinfo_box">
+                          <div class="userinfo">
+                            <input type="hidden" id="hidaddress_id" value="">
+                            <table cellpadding="0" cellspacing="0" class="invoice-table">
+                              <tr id="order_date_select_tr">
+                                <!-- <td align="right" width="12%" style="padding-right: 12px;" class="line35">
+                                  送达日期
+                                </td>
+                                <td width="18%">
+                                  <input id="addstart_time" class="invoice-txt" style="width:130px" name="addstart_time" type="text" placeholder="选择配送日期">
+                                </td> -->
+                                <td width="67%" style="position:relative;">
+                                  <input type="text" class="invoice-txt" id="shiduanxi" placeholder="选择配送时段" style="width:100%;background-color:transparent;" readonly>
+                                  <div class="order_shiduan">
+                                    <div class="li_dingshi">
+                                      <select class="userinfo-select" id="curtimemshiduan">
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                      </select>&nbsp;点&nbsp;
+                                      <select class="userinfo-select" id="curtimeminit">
+                                        <option value="00">00</option>
+                                        <option value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                      </select> &nbsp;分
+                                      <p>定时费用为25元</p>
+                                      <p>定时服务允许误差时间为：±30分钟</p>
+                                    </div>
+                                  </div>
+                                  <label style="display:none" class="error dateacd">请填写配送日期。 &nbsp;&nbsp;</label>
+                                  <font id="dtimerfee"></font>
+                                  <font id="holiday_tip" style="color:red;position:absolute;top:0px;right:160px;line-height:20px;display:inline-block"></font>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        <script>
+          
+                          var mydate = new Date();
+                          var str = "" + mydate.getFullYear() + "-";
+                          str += ( (mydate.getMonth()+1) > 10 ? (mydate.getMonth()+1) : "0" + (mydate.getMonth()+1) ) + "-";
+                          str += mydate.getDate();
+
+                          $('.user .user-bot ul li.serDate div.user-bot-list b strong').eq(0).text(str)
+          
+                          var DELIVER_TIMER_OPEN = true; //开启时段选择
+                          var DEKIVER_SHIDUAN_TIMER = {
+                            "1": 0,
+                            "2": 36000,
+                            "3": 43200,
+                            "4": 50400,
+                            "5": 57600,
+                            "6": 64800,
+                            "7": 72000,
+                            "8": 79200
+                          };
+                          var DEKIVER_SHIDUAN_REMAINTIMER = 31815;
+                    
+                          function dellinegoods(goods_id, type, gid) {
+                            common_confirm("确定删除吗？", ['确定', '取消'], function () {
+                              layer.closeAll();
+                              $('.shopping_box').load('/index.php?act=buy&op=ajax_load&goods_id=' + goods_id + '&type=' +
+                                type + '&del=true',
+                                function (data) {
+                                  //window.location.reload();
+                                  if ($('.discount-wrap').size()) {
+                                    var len = $('.discount-wrap .product').find('li[attr-goods-id="' + gid +
+                                      '"]').length;
+                                    if (len > 0) {
+                                      var b = $('.discount-wrap .product').find('li[attr-goods-id="' + gid +
+                                        '"]').eq(0);
+                                      b.find('.deg').hide().end().find('.adg').show();
+                                    }
+                                  }
+                                  reget_ajax_total();
+                                });
+                            });
+                          }
+                    
+                          function reget_ajax_total() {
+                            $.getJSON('/index.php?act=buy&op=#&addressid=', function (data) {
+                              if (parseFloat(data.goods_total_price) == 0) {
+                                window.location.href = "/cart";
+                              }
+                              $('#order_total_amounts').text('￥' + data.goods_total_price);
+                              $('#order_total_amount').text('￥' + data.total_price);
+                              $('#total_goods_geshu').text(data.goods_num);
+                              $('.total_delivery_fees').text('￥' + data.delivery_fee);
+                              DTOTALPRICE = parseFloat(data.total_price);
+                              if (data.total_price > $('#available_predeposit').attr('data-value')) {
+                                $(".pay_list li[attrpay_code='predeposit']").attr('data', 1);
+                                $(".pay_list li[attrpay_code='predeposit']").removeClass('cur');
+                              } else {
+                                $(".pay_list li[attrpay_code='predeposit']").removeAttr('data');
+                              }
+                              var redpacklists = data['redpack_list'];
+                              if (redpacklists.length > 0) {
+                                reflech_redpacket(redpacklists);
+                              } else {
+                                reflech_redpacket("0");
+                              }
+                              $("input[class='sub_juan']").trigger("click");
+                            });
+                          }
+                        
+                          function dotimesh() {
+                            var curhour = parseInt(8);
+                            var sdate = $.trim($('#addstart_time').val());
+                            var mdate = str;
+                            var holiday_date = ["1970-01-01"];
+                            var holiday_date1 = ["2018-05-18", "2018-05-19", "2018-05-20"];
+                            if (DELIVER_TIMER_OPEN && (sdate == '2018-05-18' || sdate == '2018-05-19' || sdate == '2018-05-20')) {
+                              $('.border_r_n').hide();
+                              $('.shiduan_t_list').find('li').eq(0).css('border-right', '1px solid #fff');
+                              $('.li_shiduan').find('li[atid="1"]').show();
+                              $('.li_shiduan').find('li[atid="1"]').css('padding', '0px 3px 3px 0px');
+                              $('.li_shiduan').find('li[atid="2"]').hide();
+                              $('.li_shiduan').find('li[atid="3"]').hide();
+                              $('.li_shiduan').find('li[atid="4"]').hide();
+                              $('.li_shiduan').find('li[atid="5"]').hide();
+                              $('.li_shiduan').find('li[atid="6"]').hide();
+                              $('.li_shiduan').find('li[atid="7"]').hide();
+                              $('.li_shiduan').find('li[atid="8"]').hide();
+                              if (sdate == mdate) {
+                                if (curhour >= 20) {
+                                  $('.li_shiduan').find('li[atid="15"]').hide();
+                                  $('.li_shiduan').find('li[atid="16"]').hide();
+                                  $('.li_shiduan').find('li[atid="17"]').hide();
+                                } else if (curhour >= 18) {
+                                  $('.li_shiduan').find('li[atid="15"]').hide();
+                                  $('.li_shiduan').find('li[atid="16"]').hide();
+                                  $('.li_shiduan').find('li[atid="17"]').show();
+                                } else if (curhour >= 12) {
+                                  $('.li_shiduan').find('li[atid="15"]').hide();
+                                  $('.li_shiduan').find('li[atid="16"]').show();
+                                  $('.li_shiduan').find('li[atid="17"]').show();
+                                } else {
+                                  $('.li_shiduan').find('li[atid="15"]').show();
+                                  $('.li_shiduan').find('li[atid="16"]').show();
+                                  $('.li_shiduan').find('li[atid="17"]').show();
+                                }
+                              } else {
+                                //改的这里
+                                $('.li_shiduan').find('li[atid="15"]').show();
+                                $('.li_shiduan').find('li[atid="16"]').show();
+                                $('.li_shiduan').find('li[atid="17"]').show();
+                              }
+                              if (sdate == '2018-05-20') {
+                                $('.li_shiduan').find('li[atid="15"]').hide();
+                                $('.li_shiduan').find('li[atid="16"]').hide();
+                                $('.li_shiduan').find('li[atid="17"]').hide();
+                              }
+                              $(".shiduan_t_list li:eq(0)").trigger("click");
+                              return true;
+                            } else if ($.inArray(sdate, holiday_date1) > 0) {
+                              $('.border_r_n').hide();
+                              $('.shiduan_t_list').find('li').eq(0).css('border-right', '1px solid #fff');
+                              $('.li_shiduan').find('li[atid="1"]').hide();
+                              $('.li_shiduan').find('li[atid="1"]').css('padding', '0px');
+                              $('.li_shiduan').find('li[atid="2"]').hide();
+                              $('.li_shiduan').find('li[atid="3"]').hide();
+                              $('.li_shiduan').find('li[atid="4"]').hide();
+                              $('.li_shiduan').find('li[atid="5"]').hide();
+                              $('.li_shiduan').find('li[atid="6"]').hide();
+                              $('.li_shiduan').find('li[atid="7"]').hide();
+                              $('.li_shiduan').find('li[atid="8"]').hide();
+                              $('.li_shiduan').find('li[atid="15"]').show();
+                              $('.li_shiduan').find('li[atid="16"]').show();
+                              $('.li_shiduan').find('li[atid="17"]').show();
+                            } else {
+                              $('.border_r_n').show();
+                              $('.shiduan_t_list').find('li').eq(0).css('border-right', '1px solid #e6e6e6');
+                              $('.li_shiduan').find('li[atid="1"]').css('padding', '0px');
+                              $('.li_shiduan').find('li[atid="15"]').hide();
+                              $('.li_shiduan').find('li[atid="16"]').hide();
+                              $('.li_shiduan').find('li[atid="17"]').hide();
+                              $('.li_shiduan').find('li[atid="1"]').show();
+                              $('.li_shiduan').find('li[atid="2"]').show();
+                              $('.li_shiduan').find('li[atid="3"]').show();
+                              $('.li_shiduan').find('li[atid="4"]').show();
+                              $('.li_shiduan').find('li[atid="5"]').show();
+                              $('.li_shiduan').find('li[atid="6"]').show();
+                              $('.li_shiduan').find('li[atid="7"]').show();
+                              $('.li_shiduan').find('li[atid="8"]').show();
+                            }
+                            var myDate = new Date(); //获取系统当前时间
+                            var H = '0' + myDate.getHours();
+                            var H1 = myDate.getHours();
+                            var M = myDate.getMinutes();
+                            if (sdate != '') {
+                              if (sdate == mdate) {
+                                H = parseInt(H) + 1;
+                                H1 = parseInt(H1) + 1;
+                                if (H1 >= 8) {
+                                  $('#curtimemshiduan').find('option[value="08"]').hide();
+                                }
+                                if (H1 >= 9) {
+                                  $('#curtimemshiduan').find('option[value="09"]').hide();
+                                }
+                                if (H >= 10) {
+                                  $('.li_shiduan').find('li[atid="2"]').hide();
+                                  $('#curtimemshiduan').find('option[value="10"]').hide();
+                                }
+                                if (H >= 11) {
+                                  $('.li_shiduan').find('li[atid="3"]').hide();
+                                  $('#curtimemshiduan').find('option[value="11"]').hide();
+                                }
+                                if (H >= 12) {
+                                  $('.li_shiduan').find('li[atid="3"]').hide();
+                                  $('#curtimemshiduan').find('option[value="12"]').hide();
+                                }
+                                if (H >= 13) {
+                                  $('#curtimemshiduan').find('option[value="13"]').hide();
+                                }
+                                if (H >= 14) {
+                                  $('.li_shiduan').find('li[atid="4"]').hide();
+                                  $('#curtimemshiduan').find('option[value="14"]').hide();
+                                }
+                                if (H >= 15) {
+                                  $('.li_shiduan').find('li[atid="5"]').hide();
+                                  $('#curtimemshiduan').find('option[value="15"]').hide();
+                                }
+                                if (H >= 16) {
+                                  $('.li_shiduan').find('li[atid="5"]').hide();
+                                  $('#curtimemshiduan').find('option[value="16"]').hide();
+                                }
+                                if (H >= 17) {
+                                  $('.li_shiduan').find('li[atid="6"]').hide();
+                                  $('#curtimemshiduan').find('option[value="17"]').hide();
+                                }
+                                if (H >= 18) {
+                                  $('.li_shiduan').find('li[atid="6"]').hide();
+                                  $('#curtimemshiduan').find('option[value="18"]').hide();
+                                }
+                                if (H >= 19) {
+                                  $('.li_shiduan').find('li[atid="7"]').hide();
+                                  $('#curtimemshiduan').find('option[value="19"]').hide();
+                                }
+                                if (H >= 20) {
+                                  $('.li_shiduan').find('li[atid="7"]').hide();
+                                  $('#curtimemshiduan').find('option[value="20"]').hide();
+                                }
+                                if (H >= 21) {
+                                  $('#curtimemshiduan').find('option[value="21"]').hide();
+                                }
+                                if (H >= 22) {
+                                  $('.li_shiduan').find('li[atid="8"]').hide();
+                                  $('#curtimemshiduan').find('option[value="22"]').hide();
+                                }
+                                if (H >= 12 && H < 18) {
+                                  $('.li_shiduan').find('li[atid="15"]').hide();
+                                }
+                                if (H >= 18 && H < 22) {
+                                  $('.li_shiduan').find('li[atid="16"]').hide();
+                                }
+                                var isx = 0;
+                                $('#curtimemshiduan').find('option').each(function () {
+                                  var dp = $(this).css('display');
+                                  if (dp != 'none' && isx == 0) {
+                                    $('#curtimemshiduan').val(parseInt($(this).attr('value')) - 1);
+                                    $('#curtimeminit').val('30');
+                                    isx = 1;
+                                  }
+                                });
+                                //按一个小时来显示时间段
+                                check_delivery_shiduan_timer(H1, M);
+                              } else {
+                                $('.li_shiduan').find('li').each(function () {
+                                  // $(this).show();
+                                });
+                                $('#curtimemshiduan').find('option').each(function () {
+                                  $(this).show();
+                                });
+                              }
+                            } else {
+                              var isx = 0;
+                              $('#curtimemshiduan').find('option').each(function () {
+                                var dp = $(this).attr('value');
+                                if (dp == H && isx == 0) {
+                                  $('#curtimemshiduan').val(H);
+                                  $('#curtimeminit').val('05');
+                                  isx = 1;
+                                }
+                              });
+                            }
+                          };
+                          $(function () {
+                            $('.order_shiduan').hide();
+                            $('.li_shiduan').find('li').click(function () {
+                              var atid = $(this).attr('atid');
+                              $('#shiduanxi').val($(this).text());
+                              $("input[name='ndingshi_is_timer']").val('0');
+                              $("input[name='nshiduan_timer']").val(atid);
+                              $('.order_shiduan').hide();
+                              checkholiday_price();
+                            });
+                            $('#shiduanxi').focus(function () {
+                              $('.order_shiduan').show();
+                              dotimesh();
+                            });
+                            $('#curtimeminit').change(function () {
+                              $("input[name='ndingshi_is_timer']").val('1');
+                              var dh = $('#curtimemshiduan').val();
+                              var dm = $("#curtimeminit").val();
+                              $("input[name='nshiduan_timer']").val(dh + '|' + dm);
+                              $('#shiduanxi').val(dh + '点' + dm + '分');
+                              $('.order_shiduan').hide();
+                            });
+                    
+                            function zoreminiteclick(obj) {
+                              if ($(obj).val() == '00') {
+                                $("input[name='ndingshi_is_timer']").val('1');
+                                var dh = $('#curtimemshiduan').val();
+                                var dm = $("#curtimeminit").val();
+                                $("input[name='nshiduan_timer']").val(dh + '|' + dm);
+                                $('#shiduanxi').val(dh + '点' + dm + '分');
+                                $('.order_shiduan').hide();
+                              }
+                            };
+                            var curtimehour = '08';
+                            var curtimeminit = '50';
+                            $('#curtimemshiduan').val(curtimehour);
+                            $("#curtimeminit").val(curtimeminit);
+                            $('#shiduan').change(function () {
+                              var shijian = $(this).val();
+                              if (shijian == 100) {
+                                $('#dshij,#mshij,.dsima').show();
+                                $('#dtimerfee').text('定时配送¥25.00');
+                                $('#dtimerfee').css('color', '#c70007');
+                              } else {
+                                $('#dshij,#mshij,.dsima').hide();
+                                $('#dtimerfee').text('');
+                              }
+                            });
+                            $('#addresstoarea1').blur(function () {
+                              var tval = $(this).val();
+                              if (tval.length < 2) {
+                                $('.error1').show();
+                                $('.noselect_store_error').html('');
+                                return false;
+                              } else {
+                                $('.error1').hide();
+                              }
+                              var area = $.trim($('#addresstoarea').text());
+                              if (area.indexOf("选择地区") == -1 && area != '' && tval != '') {
+                                if (CHOOSE_FRONT_STORE == "1") {
+                                  doconsole_price_c();
+                                } else {
+                                  doconsole_price();
+                                }
+                              }
+                            });
+                            $(document).bind("click", function (e) {
+                              var reg = /^1[3|4|5|7|8][0-9]{9}$/;
+                              if ($(e.target).closest(".order_shiduan").length == 0 && $(e.target).closest(
+                                  "#shiduanxi").length == 0) {
+                                $('.order_shiduan').hide();
+                              }
+                              var addrss = $('#addresstoarea1').val();
+                              if (addrss != '') {
+                                $('.areacls').hide();
+                              }
+                              if ($('#addresstoname').val() != '') {
+                                $('#addresstoname').siblings().hide();
+                              }
+                              if ($('#addresstotel').val() != '' && reg.test($('#addresstotel').val())) {
+                                $('#addresstotel').siblings().hide();
+                              }
+                              if ($('#dinghuaname').val() != '') {
+                                $('#dinghuaname').siblings().hide();
+                              }
+                              if ($('#dinghuatel').val() != '' && reg.test($('#dinghuatel').val())) {
+                                $('#dinghuatel').siblings().hide();
+                              }
+                              if ($.trim($('#addstart_time').val()) != '' && $.trim($('#shiduanxi').val()) != '') {
+                                $('.dateacd').hide();
+                              } else {
+                                $('.dateacd').show();
+                              }
+                            });
+                          });
+                    
+                          function saveaddress() {
+                            var cansub = 1;
+                            var reg = /^1[3|4|5|6|7|8|9][0-9]{9}$/;
+                            var toname = $.trim($('#addresstoname').val());
+                            var totel = $.trim($('#addresstotel').val());
+                            var area = $.trim($('#addresstoarea').text());
+                            var area1 = $.trim($('#addresstoarea1').val());
+                            var date = $.trim($('#addstart_time').val());
+                            var diname = $.trim($('#dinghuaname').val());
+                            var dintel = $.trim($('#dinghuatel').val());
+                            if (toname == '') {
+                              $('#addresstoname').parent().find('.error').show();
+                              cansub = 0;
+                            } else {
+                              $('#addresstoname').parent().find('.error').hide();
+                            }
+                            if (totel == '') {
+                              $('#addresstotel').parent().find('.error').show();
+                              cansub = 0;
+                            } else {
+                              $('#addresstotel').parent().find('.error').hide();
+                            }
+                            if (!reg.test(totel)) {
+                              $('#addresstotel').parent().find('.error').show();
+                              cansub = 0;
+                            } else {
+                              $('#addresstotel').parent().find('.error').hide();
+                            }
+                            if (area == '' || area1 == '' || area.indexOf('选择') > -1) {
+                              $('.areacls').show();
+                              cansub = 0;
+                            } else {
+                              $('.areacls').hide();
+                            }
+                            if (date == '' && ISYONG_SH_HUA == "0") {
+                              $('.dateacd').show();
+                              cansub = 0;
+                            } else {
+                              $('.dateacd').hide();
+                            }
+                            if (diname == '') {
+                              $('#dinghuaname').parent().find('.error').show();
+                              cansub = 0;
+                            } else {
+                              $('#dinghuaname').parent().find('.error').hide();
+                            }
+                            if (dintel == '') {
+                              $('#dinghuatel').parent().find('.error').show();
+                              cansub = 0;
+                            } else {
+                              $('#dinghuatel').parent().find('.error').hide();
+                            }
+                            if (!reg.test(dintel)) {
+                              $('#dinghuatel').parent().find('.error').show();
+                              cansub = 0;
+                            } else {
+                              $('#dinghuatel').parent().find('.error').hide();
+                            }
+                            var shiduan = $("input[name='nshiduan_timer']").val();
+                            var dshij = $("input[name='ndingshi_is_timer']").val();
+                            if (shiduan == '' && ISYONG_SH_HUA == "0") {
+                              cansub = 0;
+                              $('.dateacd').show();
+                            }
+                            //如果地址没有选择完成，从上次选择中取出
+                            if (cur_select_area_ids.length < 2) {
+                              cur_select_area_ids = cur_select_area_ids_old;
+                            } else {
+                              if (typeof (nc_a[cur_select_area_ids[1]]) != 'undefined') {
+                                cur_select_area_ids = cur_select_area_ids_old;
+                              }
+                            }
+                            var areaid = cur_select_area_ids.join(',');
+                            var address_id = $('#hidaddress_id').val();
+                            var isni = $('#isniming:checked').val();
+                            if (typeof isni === 'undefined') {
+                              isni = 0;
+                            } else {
+                              isni = 1;
+                            }
+                            if (cansub == 1) {
+                              $.post('/index.php?act=buy&op=addaddress', {
+                                toname: toname,
+                                totel: totel,
+                                area: area,
+                                area1: area1,
+                                date: date,
+                                diname: diname,
+                                dintel: dintel,
+                                areaid: areaid,
+                                shiduan: shiduan,
+                                dshij: dshij,
+                                address_id: address_id,
+                                isni: isni
+                              }, function (data) {
+                                $('#addresstoarea1').blur();
+                                $('#userinfo_div_close').click();
+                                setTimeout(function () {
+                                  location.href = '/index.php?act=buy&op=buy_step1';
+                                }, 600);
+                              });
+                            }
+                          };
+                    
+                          function doconsole_price(page) {
+                            if (typeof page == 'undefined') {
+                              page = 1;
+                            }
+                            $('.edithuastoreinfo,.areacls').hide();
+                            $('#select_store').show();
+                            var area = $.trim($('#addresstoarea').text());
+                            var area1 = $.trim($('#addresstoarea1').val());
+                            if (area1 == '') return;
+                            var areaid = cur_select_area_ids.join(',');
+                            var stype = $('#select_store').val();
+                            if (!$('#select_store').size()) {
+                              stype = 0;
+                            }
+                            $.post('/index.php?act=buy&op=gethua_store&page=' + page, {
+                              area: area,
+                              area1: area1,
+                              areaid: areaid,
+                              stype: stype,
+                            }, function (data) {
+                              var dataObj = eval("(" + data + ")"); //解析json
+                              if (dataObj['type'] == '2') {
+                                $('#select_store').hide();
+                                hide_map_divframe();
+                                if ($('#select_store').size()) {
+                                  $('.edithuastoreinfo').html('<font style="color:#e6500e">指定为: ' + dataObj[
+                                      'deliver_store_name'] + ' ' + dataObj['dmsg'] +
+                                    '</font>&nbsp;&nbsp;<font style="color:#394d75;"><a class="xgb" href="javascript:;" onclick="dochangestore(1)">修改</a> / <a class="xgq" href="javascript:;" onclick="dochangestore()">取消</a>配送花店 <font style="color:red;margin-left:5px">提示：若所选花店无法配送，将为您安排附近其他花店</font></font>'
+                                  );
+                                  $('.edithuastoreinfo').show();
+                                }
+                                return;
+                              }
+                              if (dataObj['type'] == '0') {
+                                if (NO_STORES_SELECT) {
+                                  $('.areaclt').text(dataObj.msg).show();
+                                  $('.noselect_store_error').hide();
+                                } else {
+                                  if (dataObj.status == 'false') {
+                                    $('.noselect_store_error').html(NO_STORES_SUPPORT_TIP).show();
+                                  } else {
+                                    $('.noselect_store_error').hide();
+                                  }
+                                }
+                                if (dataObj.status == 'false') {
+                                  $('#saveaddressforid').removeClass('invoice-btn').addClass('disable_address_b');
+                                  $('#saveaddressforid').removeAttr('onclick');
+                                } else {
+                                  $('#saveaddressforid').removeClass('disable_address_b').addClass('invoice-btn');
+                                  $('#saveaddressforid').show();
+                                  $('#saveaddressforid').attr('onclick', 'saveaddress();');
+                                }
+                              } else if (dataObj['type'] == '1') {
+                                $('.areaclt,.areacltt').html('');
+                                var htmlpend = '';
+                                var hidstr = '';
+                                var oxy = '';
+                                for (var i = 0; i < dataObj['list_store'].length; i++) {
+                                  if (i < PERPAGE_NUM) {
+                                    hidstr = 'style ="position:relative;';
+                                  } else {
+                                    hidstr = 'style ="display:none;position:relative;';
+                                  }
+                                  if (dataObj['list_store'][i]['store_grade'] == 1) {
+                                    var xinrate = '<span>★</span>';
+                                  } else if (dataObj['list_store'][i]['store_grade'] == 2) {
+                                    var xinrate = '<span>★★</span>';
+                                  } else if (dataObj['list_store'][i]['store_grade'] == 3) {
+                                    var xinrate = '<span>★★★</span>';
+                                  } else if (dataObj['list_store'][i]['store_grade'] == 4) {
+                                    var xinrate = '<span>★★★★</span>';
+                                  } else {
+                                    var xinrate = '<span>★★★★★</span>';
+                                  }
+                                  if (dataObj['list_store'][i]['isjiangmeng'] == "1") {
+                                    hidstr += 'height:56px;';
+                                    var xinrate =
+                                      '<span style="width:100px;color:#fff" class="txk"><b class="tck">荐</b>爱花居品牌直营店</span>';
+                                    var soapstyle = 'style="width:95px;"';
+                                    var divstyle = 'style="height:58px;"';
+                                  } else {
+                                    var soapstyle = "";
+                                    var divstyle = "";
+                                  }
+                                  hidstr += '"';
+                                  oxy += dataObj['list_store'][i]['xls'] + ',' + dataObj['list_store'][i]['yls'];
+                                  oxy += '|';
+                                  htmlpend = htmlpend + '<li ' + hidstr + ' class="lisinglestore"  attr_xls="' +
+                                    dataObj['list_store'][i]['xls'] + '"  attr_yls="' + dataObj['list_store'][i][
+                                      'yls'
+                                    ] + '" onclick="selectthestore(this,\'' + dataObj['list_store'][i]['areaid'] +
+                                    '\');"><div class="fl store_img" style="padding-left:16px">' +
+                                    '<span class="BMapLabel" style="position:absolute;top:12px;left:2px;">' + (i +
+                                      1) + '</span><img src="' + dataObj['list_store'][i]['store_label'] +
+                                    '" width="47" height="47"></div>' +
+                                    '<div class="fl store_info" ' + divstyle + '>' +
+                                    '<p class="storename"><soap class="storename1" ' + soapstyle + '>' + dataObj[
+                                      'list_store'][i]['store_name'] + '</soap>' + xinrate + '</p>' +
+                                    '<p class="storedizhi" style="display:none">' + dataObj['list_store'][i][
+                                      'store_dizhi'
+                                    ] + '<span></span></p>' +
+                                    '<p class="storetel" style="display:none">' + dataObj['list_store'][i][
+                                      'store_mobile'
+                                    ] + '<span></span></p>' +
+                                    '<p><label style="display:none">距离：<soap class="storejuli">' + dataObj[
+                                      'list_store'][i]['juli'] + '</soap></label>配送费：<soap class="storedfee">' +
+                                    dataObj['list_store'][i]['fee'] + '</soap></p>' +
+                                    '<p class="pinjia">累计评价: ' + dataObj['list_store'][i]['store_comments'] +
+                                    ' 好评: ' + dataObj['list_store'][i]['store_wellcredit'] + '  信用：  ' + dataObj[
+                                      'list_store'][i]['praise_rate'] + '%</p>' +
+                                    '</div><div class="over_div">' +
+                                    '点击<br>选中</div></li>';
+                                }
+                                if (htmlpend == '') {
+                                  $('#saveaddressforid').removeClass('invoice-btn').addClass('disable_address_b');
+                                  $('#saveaddressforid').removeAttr('onclick');
+                                  if (typeof (dataObj['dmsg']) == 'undefined') {
+                                    $('.areaclt').text('该地区50Km内无花店，无法配送').show();
+                                  } else {
+                                    $('.areaclt').text(dataObj['dmsg']).show();
+                                  }
+                                  if (page > 1) {
+                                    CURPAGE = page - 1;
+                                    $('#msgprenextstore').text('已经是最后一页');
+                                    setTimeout(function () {
+                                      $('#msgprenextstore').text('')
+                                    }, 1500);
+                                  }
+                                  $('#iframeidload').attr('src', '/index.php?act=buy&op=showcity&area=' + $.trim($(
+                                    '#addresstoarea').text()));
+                                } else {
+                                  $('#saveaddressforid').removeClass('disable_address_b').addClass('invoice-btn');
+                                  $('#saveaddressforid').attr('onclick', 'saveaddress();');
+                                  $('#saveaddressforid,#store_list,.page').show();
+                                  $('.appendulclass').empty().html(htmlpend);
+                                  $('#iframeidload').attr('src', '/index.php?act=buy&op=getmap_tempate&oxy=' + oxy +
+                                    '&page=' + page + '&vbaidu=' + Math.random());
+                                }
+                                show_map_divframe();
+                                if (i < 4) {
+                                  if (page == 1) {
+                                    $('.lastpagecl').hide();
+                                    $('.nextpagecl').hide();
+                                  } else {
+                                    $('.lastpagecl').show();
+                                    $('.nextpagecl').hide();
+                                  }
+                                } else {
+                                  $('.lastpagecl,.nextpagecl').show();
+                                }
+                                $('#store_list ul li').each(function (index, element) {
+                                  $(this).mouseover(function () {
+                                    $('#store_list ul li').removeClass('cur');
+                                    $('#store_list ul li').eq(index).addClass('cur');
+                                  });
+                                  $(this).mouseout(function () {
+                                    $('#store_list ul li').removeClass('cur');
+                                  });
+                                });
+                              }
+                            });
+                          };
+                    
+                          function doconsole_price_c() {
+                            var area = $.trim($('#addresstoarea').text());
+                            var area1 = $.trim($('#addresstoarea1').val());
+                            if (area1 == '') return;
+                            var areaid = cur_select_area_ids.join(',');
+                            var stype = $('#select_store').val();
+                            var stypt = 1;
+                            $.post('/index.php?act=buy&op=gethua_store&page=1', {
+                              area: area,
+                              area1: area1,
+                              areaid: areaid,
+                              stype: stype,
+                              stypt: stypt
+                            }, function (data) {
+                              var dataObj = eval("(" + data + ")"); //解析json
+                              if (dataObj['type'] == '2') {
+                                $('#select_store').hide();
+                                hide_map_divframe();
+                                if ($('#select_store').size()) {
+                                  $('.edithuastoreinfo').html('<font style="color:#e6500e">指定为: ' + dataObj[
+                                      'deliver_store_name'] + ' ' + dataObj['dmsg'] +
+                                    '</font>&nbsp;&nbsp;<font style="color:#394d75;"><a class="xgb" href="javascript:;" onclick="dochangestore(1)">修改</a> / <a class="xgq" href="javascript:;" onclick="dochangestore()">取消</a>配送花店<font style="color:red;margin-left:5px">提示：若所选花店无法配送，将为您安排附近其他花店</font></font>'
+                                  );
+                                  $('.edithuastoreinfo').show();
+                                }
+                                return;
+                              }
+                            })
+                          };
+                    
+                          function show_map_divframe() {
+                            $('#store_list_box').css({
+                              'position': 'relative',
+                              'top': '0px'
+                            });
+                          }
+                    
+                          function hide_map_divframe() {
+                            $('#store_list_box').css({
+                              'position': 'absolute',
+                              'top': '-800px'
+                            });
+                          }
+                          var CHECKVICEURL = '/index.php?act=buy&op=checkvicem';
+                          var SELECTONEURL = '/index.php?act=buy&op=selectforlistOne';
+                          var SHOWEAREURL = '/index.php?act=buy&op=showcity';
+                          var CART_GOODS_NUM = '1';
+                          var EXCHANGE_GOODS_NUM = '0';
+                          var NO_STORES_SELECT = $('#select_store').size();
+                          var NO_STORES_SUPPORT_TIP =
+                            "该地区暂不支持配送,您可购买<a style='color:blue' href='/search-33-0-0-0-0.html' target='blank'>永生花</a>支持全国配送,快递发货";
+                        </script>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+        <div class="login-btn">
+          <button type="submit" class="am-btn am-btn-danger am-btn-block">确定</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 支付方式 -->
+    <div class="cover cover03"></div>
+    <div class="serPay-box">
+      <div class="serDate-title">
+        <p>选择支付方式</p>
+      </div>
+      <div class="user">
+        <div class="user-bot">
+          <ul>
+            <li><a href="#">
+              <i style="background-image: url(./images/aliPay.png);"></i>
+              <div class="user-bot-list">
+                <span>支付宝支付</span>
+                <i class="am-icon-btn active"></i>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <i style="background-image: url(./images/wechatPay.png);"></i>
+              <div class="user-bot-list">
+                <span>微信支付</span>
+                <i class="am-icon-btn"></i>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="menu">
+      <ul>
+        <li><a href="#">
+          <i></i>
+          <p>首页</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>分类</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>客服</p>
+        </a></li>
+        <li><a href="#">
+          <i></i>
+          <p>购物车</p>
+        </a></li>
+        <li class="active"><a href="#">
+          <i></i>
+          <p>我的</p>
+        </a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/amazeui.min.js"></script>
+  <script src="./js/goods.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/custom.js"></script>
+
+  <!-- 定时 -->
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <script type="text/javascript" src="./js/jquery.ui.js"></script>
+  <script src="./js/rili.js"></script>
+  <script>
+    var TOTAL_STORE_NUM = 0;
+    var PERPAGE_NUM = 6;
+    var CURPAGE = 1;
+    var DATE_CUR_GLOBAL = str;
+    var ISYONG_SH_HUA = 0;
+    var $cur_area_list, $cur_tab, next_tab_id = 0,
+      cur_select_area = [],
+      calc_area_id = '',
+      calced_area = [],
+      cur_select_area_ids = [],
+      cur_select_area_ids_old = [];
+
+    function invoice_div_show(type, invoiceid) {
+      if (type == 1) {
+        $.post('/index.php?act=buy&op=getinvoiceinfo', {
+          invoiceid: invoiceid
+        }, function (data) {
+          var obj = eval("(" + data + ")");
+          $('#invoicecontent').val(obj['inv_content']);
+          $('#invoicecompany').val(obj['inv_company']);
+          $('#invoicetitle').val(obj['inv_title']);
+          $('#invoicename').val(obj['inv_rec_name']);
+          $('#invoicetel').val(obj['inv_rec_mobphone']);
+          $('#invoiceaddress').val(obj['inv_goto_addr']);
+          $('#invoicehinvid').val(obj['inv_id']);
+        });
+      } else {
+        $('#invoicehinvid').val('');
+      }
+      setclien_top($('#invoice .invoice_info'), $('#invoice'));
+      $('#bg').show();
+      $('#invoice').show();
+    }
+
+    function delg(obj, goods_id, type, num) {
+      if (typeof num != 'undefined') {
+        if (num > 0) {
+          common_info('积分商品不能修改数量!');
+          return;
+        }
+      }
+      var a = parseInt($(obj).next().val());
+      if (a < 2) return;
+      var gid = $(obj).attr('ac_gid');
+      if (gid && self_in_array(gid, goods_special_nums)) {
+        if (self_in_array(gid, goods_special_nums_bak)) {
+          if (a <= goods_special_default_num_bak) {
+            common_info('此商品的最低购买数量是：' + goods_special_default_num_bak);
+            return;
+          }
+        } else {
+          if (a <= goods_special_default_num) {
+            common_info('此商品的最低购买数量是：' + goods_special_default_num);
+            return;
+          }
+        }
+      }
+      $(obj).next().val((a - 1));
+      $('.shopping_box').load('/index.php?act=buy&op=ajax_load&goods_id=' + goods_id + '&type=' + type +
+        '&reduce=true',
+        function (datas) {
+          reget_ajax_total();
+        });
+    }
+
+    function changenum(obj, goods_id, type) {
+      if (typeof num != 'undefined') {
+        if (num > 0) {
+          common_info('积分商品不能修改数量!');
+          return;
+        }
+      }
+      if (isNaN($(obj).val())) {
+        common_info('请输入数字!');
+        $(obj).val(1);
+      }
+      var a = parseInt($(obj).val());
+      if (a < 1) {
+        $(obj).val(1);
+        common_info('数量必须大于0!');
+        return;
+      }
+      $('.shopping_box').load('/index.php?act=buy&op=ajax_load&goods_id=' + goods_id + '&type=' + type +
+        '&cnum=true&num=' + a,
+        function (datas) {
+          reget_ajax_total();
+        });
+    }
+
+    function addg(obj, goods_id, type, num) {
+      if (typeof num != 'undefined') {
+        if (num > 0) {
+          common_info('积分商品不能修改数量!');
+          return;
+        }
+      }
+      if ($(obj).attr('attr-num') == "0") {
+        common_info('特惠的商品不能修改数量!');
+        return;
+      }
+      var a = parseInt($(obj).prev().val());
+      $(obj).prev().val((a + 1));
+      $('.shopping_box').load('/index.php?act=buy&op=ajax_load&goods_id=' + goods_id + '&type=' + type +
+        '&add=true',
+        function (datas) {
+          reget_ajax_total();
+        });
+    }
+
+    var AREA_FIRST_SELECT = false;
+    var EXTRA_DAY_DATEPICKER = [];
+    $(document).ready(function () {
+      if ($('.pay_list li[attrpay_code="zxpay"]').length > 0) {
+        $('#paymethodcode').val('zxpay');
+      }
+      if ($("#select_store").length > 0) {
+        //$('#select_store').hide();
+      }
+      $('#addstart_time').datepicker({
+        dateFormat: 'yy-mm-dd',
+        minDate: new Date(),
+        onSelect: function (pa, pd) {
+          if ($.inArray(pa, EXTRA_DAY_DATEPICKER) > -1) {
+            pd.input.val("");
+            common_info('该日期暂不支持配送，请选择其它配送日期');
+          }
+          $("#addstart_time").trigger('change');
+        }
+      });
+      $("#ncs-freight-selector").hover(function () {
+        //如果店铺没有设置默认显示区域，马上异步请求
+        $(this).addClass("hover");
+        $(this).on('mouseleave', function () {
+          $(this).removeClass("hover");
+        });
+      });
+      $('ul[class="area-list"]').on('click', 'a', function () {
+        $('#ncs-freight-selector').unbind('mouseleave');
+        var tab_id = parseInt($(this).parents('div[data-widget="tab-content"]:first').attr(
+          'data-area'));
+        if (tab_id == 0) {
+          cur_select_area = [];
+          cur_select_area_ids = []
+        };
+        if (tab_id == 1 && cur_select_area.length > 1) {
+          cur_select_area.pop();
+          cur_select_area_ids.pop();
+          if (cur_select_area.length > 1) {
+            cur_select_area.pop();
+            cur_select_area_ids.pop();
+          }
+        }
+        next_tab_id = tab_id + 1;
+        var area_id = $(this).attr('data-value');
+        $cur_tab = $('#ncs-stock').find('li[data-index="' + tab_id + '"]');
+        $cur_tab.find('em').html($(this).html());
+        $cur_tab.find('i').html(' ∨');
+        if (tab_id < 2) {
+          calc_area_id = area_id;
+          cur_select_area.push($(this).html());
+          cur_select_area_ids.push(area_id);
+          $cur_tab.find('a').removeClass('hover');
+          $cur_tab.nextAll().remove();
+          _loadArea(area_id);
+        } else {
+          //点击第三级，不需要显示子分类
+          if (cur_select_area.length == 3) {
+            cur_select_area.pop();
+            cur_select_area_ids.pop();
+          }
+          cur_select_area.push($(this).html());
+          cur_select_area_ids.push(area_id);
+          $('#ncs-freight-selector > div[class="text"] > div').html(cur_select_area.join('  '));
+          frontselectclear();
+          checkprice_region();
+          $('#ncs-freight-selector').removeClass("hover");
+          _calc();
+        }
+        $('#ncs-stock').find('li[data-widget="tab-item"]').on('click', 'a', function () {
+          var tab_id = parseInt($(this).parent().attr('data-index'));
+          if (tab_id < 2) {
+            $(this).parent().nextAll().remove();
+            $(this).addClass('hover');
+            $('#ncs-stock').find('div[data-widget="tab-content"]').each(function () {
+              if ($(this).attr("data-area") == tab_id) {
+                $(this).show();
+              } else {
+                $(this).hide();
+              }
+            });
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    var HOLIDAY_URL = '/index.php?act=buy&op=checkholiday';
+    var CARD_MORE_URL = '/index.php?act=buy&op=cardmore';
+    var PAYPASSHAVE = '';
+    var DTOTALPRICE = 673.00;
+    $('.div_adv1,.header_wrap,.public_nav_layout').hide();
+    $('.split2').css('border', '2px solid #fff');
+
+    function redictdopay() {
+      var inv_type = $('input[name="invoicek"]:checked').val();
+      if (inv_type == "1") {
+        if ($.trim($('.invoicetipmsg').html()) == "") {
+          $('.addinvoicea').click();
+          return;
+        }
+      }
+      cover_order_submit();
+      $.post('/index.php?act=buy&op=checkunloginpay', function (data) {
+        if (data == '1') {
+          $('#formconfirmrht').submit();
+          setTimeout(function () {
+            cover_order_hide();
+          }, 1500);
+        } else {
+          cover_order_hide();
+          addressinit();
+        }
+      });
+    }
+    var HOLODAY_NAME = '521表白日';
+    var CHOOSE_FRONT_AREA = '';
+    var CHOOSE_FRONT_STORE = 0;
+    var CHOOSE_FRONT_STORR = 0;
+
+    var TEMPTS1 = 1;
+    var TEMPTS2 = 1;
+
+    function addressinit() {
+      //这里如果选择好了之后，再次购买确定节日价，然后提示
+      $.post(HOLIDAY_URL, {
+        date: str
+      }, function (dats) {
+        if (dats != "0") {
+          getaddressedit('');
+          if (dats == 1) {
+            $('#holiday_tip').html('您选择的配送时间是' + HOLODAY_NAME + '期间<br>购物车的商品将自动按照节日价格计算');
+            $('#holiday_tip').show();
+          } else if (dats == 2) {
+            //$('#holiday_tip').html('你选择的是平时送到,购物车的商品将自动按照平日价格计算');
+            $('#holiday_tip').html('');
+            $('#holiday_tip').html('您选择的配送时间是平时送达<br>购物车的商品将按照平时价格计算');
+            $('#holiday_tip').show();
+          } else {
+            $('#holiday_tip').html('');
+          }
+        }
+      });
+    }
+
+    function yanzhengzhimi() {
+      var paypass = $('#dinputpaypass').val();
+      if (paypass != '') {
+        $.post('/index.php?act=buy&op=checkpaypassdo', {
+          paypass: paypass
+        }, function (data) {
+          if (data == '1') {
+            $('#paypassiscfid').val(paypass);
+            $('#pay_order').hide();
+            $('#formconfirmrht').submit();
+          } else {
+            $('.paychecksp').text('支付密码验证失败').show();
+          }
+        })
+      }
+    }
+
+    function frontselectclear() {
+      var isinit = $('#adress_info').attr('attr_init');
+      //如果地址一样就不切换成默认的地址方式
+      if (CHOOSE_FRONT_AREA == cur_select_area.join(',')) {
+        return;
+      }
+      if (isinit == '1' && CHOOSE_FRONT_STORR == 1 && CHOOSE_FRONT_STORE == 1) {
+        CHOOSE_FRONT_STORR = 0;
+        $('.areaclt,.areacltt,.edithuastoreinfo').hide();
+        $('#select_store').val("0");
+        $('#select_store').show();
+      }
+    }
+    //禁止按钮点击
+    function disbtn(status) {
+      if (status == 1) {
+        $('#vcode_btn').attr('disabled', 'disabled');
+      } else {
+        $('#vcode_btn').removeAttr('disabled');
+      }
+    }
+
+    function sendtelmsg(obj) {
+      var mobile = $.trim($('input[name="reg_name"]').val());
+      var reg = /^1[3|4|5|7|8][0-9]{9}$/;
+      if (reg.test(mobile)) {
+        $(obj).parent().find('span').html('');
+        $('input[name="reg_name"]').parent().find('span').html('');
+        disbtn(1);
+        $.getJSON('/index.php?act=security&op=send_reg_mobile', {
+          mobile: mobile
+        }, function (data) {
+          if (data.state == 'false') {
+            disbtn(0);
+            $('#sendcodemg').html('' + data.msg + '');
+            $('#sendcodemg').css('color', 'red');
+          } else {
+            timer = setInterval(function () {
+              settime(obj)
+            }, 1000);
+            $('#sendcodemg').html('验证码已发出，请注意查收');
+            $('#sendcodemg').css('color', 'green');
+          }
+        });
+
+      } else {
+        $('input[name="reg_name"]').parent().find('span').html(
+          '<label for="telcode" class="error">手机号码格式错误</label>');
+        return;
+      };
+    };
+    var countdown = 60;
+    var timer;
+
+    function settime(val) {
+      if (countdown == 0) {
+        val.removeAttribute("disabled");
+        val.value = "获取验证码";
+        countdown = 60;
+        clearTimeout(timer);
+      } else {
+        val.setAttribute("disabled", true);
+        val.value = "重新发送验证码(" + countdown + ")";
+        countdown--;
+      }
+    };
+  </script>
+  <script type="text/javascript" src="./js/zh-cn.js"></script>
+  <script type="text/javascript" src="./js/buy_new.js"></script>
+
+</body>
+
+</html>
