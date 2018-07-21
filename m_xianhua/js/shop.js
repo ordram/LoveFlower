@@ -17,11 +17,11 @@ $(function(){
         that.find('.min').attr('disabled', false);
       }
       if(that.hasClass('active') == true){
-        jNum += parseInt(that.find('.collect-box-r p e b').text()) * 1;
+        jNum += parseFloat(that.find('.collect-box-r p e b').text()) * 1;
       }else{
         return;
       }
-      $('.settle .settle-r span e').text('￥' + jNum);
+      $('.settle .settle-r span e').text('￥' + parseFloat(jNum).toFixed(2) );
       return jNum;
     })
     //数量减少操作
@@ -31,11 +31,11 @@ $(function(){
         that.find('.min').attr('disabled', true);
       }
       if(that.hasClass('active') == true){
-        jNum -= parseInt(that.find('.collect-box-r p e b').text()) * 1;
+        jNum -= parseFloat(that.find('.collect-box-r p e b').text()) * 1;
       }else{
         return;
       }
-      $('.settle .settle-r span e').text('￥' + jNum);
+      $('.settle .settle-r span e').text('￥' + parseFloat(jNum).toFixed(2) );
       return jNum;
     })
 
@@ -44,13 +44,13 @@ $(function(){
     that.find('.choose-up i').click(function(){
       if(chooseNum == 0){
         that.addClass('active');
-        jNum += parseInt(that.find('.collect-box-r p e b').text()) * parseInt(that.find('.text_box').val());
-        $('.settle .settle-r span e').text('￥' + jNum);
+        jNum += parseFloat(that.find('.collect-box-r p e b').text()) * parseFloat(that.find('.text_box').val());
+        $('.settle .settle-r span e').text('￥' + parseFloat(jNum).toFixed(2) );
         chooseNum = 1;
       }else{
         that.removeClass('active');
-        jNum -= parseInt(that.find('.collect-box-r p e b').text()) * parseInt(that.find('.text_box').val());
-        $('.settle .settle-r span e').text('￥' + jNum);
+        jNum -= parseFloat(that.find('.collect-box-r p e b').text()) * parseFloat(that.find('.text_box').val());
+        $('.settle .settle-r span e').text('￥' + parseFloat(jNum).toFixed(2) );
         chooseNum = 0;
       }
     })
@@ -61,16 +61,16 @@ $(function(){
       if(settleNum == 0){
         $('.settle .settle-l i').addClass(' active');
         that.addClass(' active');
-        jNumOut += parseInt(that.find('.collect-box-r p e b').text()) * parseInt(that.find('.text_box').val());
+        jNumOut += parseFloat(that.find('.collect-box-r p e b').text()) * parseFloat(that.find('.text_box').val());
         jNum = jNumOut;
-        $('.settle .settle-r span e').text('￥' + jNumOut);
+        $('.settle .settle-r span e').text('￥' + parseFloat(jNumOut).toFixed(2) );
         settleNum = 1;
         chooseNum = 1;
       }else{
         $('.settle .settle-l i').removeClass(' active');
         that.removeClass(' active');
-        jNum = jNumOut = 0;
-        $('.settle .settle-r span e').text('￥' + jNumOut);
+        jNum = jNumOut = 0.00;
+        $('.settle .settle-r span e').text('￥' + parseFloat(jNumOut).toFixed(2) );
         settleNum = 0;
         chooseNum = 0;
       }
