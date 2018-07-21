@@ -2,6 +2,7 @@
 
 //商品规格选择
 $(function () {
+
   $(".theme-options").each(function () {
     var i = $(this);
     var p = i.find("ul>li");
@@ -14,6 +15,44 @@ $(function () {
 
       }
 
+    })
+
+  })
+
+  $(".theme-optionsLi").each(function(){
+    var i = $(this);
+    var p = i.find("ul>li");
+    var price = 0;
+
+    var sys_item_price= $(".sys_item_price").text();
+    var sys_item_mktprice= $(".sys_item_mktprice").text();
+
+    i.find('input').val(i.find('ul li').eq(0).attr("rel"));
+    i.find('input').attr('price',i.find('ul li').eq(0).attr("price"));
+
+    i.find('input').each(function(){
+      price+=parseFloat($(this).attr('price'));
+    });
+
+    $(".sys_item_price").text((parseFloat(sys_item_price)+price).toFixed(2))
+    $(".sys_item_mktprice").text((parseFloat(sys_item_mktprice)+price).toFixed(2))
+
+    p.each(function(){
+      $(this).click(function(){
+
+        price=0;
+
+        i.find('input').val($(this).attr("rel"));
+        i.find('input').attr('price',$(this).attr("price"));
+
+        $(".theme-optionsLi").find('input').each(function(){
+            price+=parseFloat($(this).attr('price'));
+        });
+
+        $(".sys_item_price").text((parseFloat(sys_item_price)+price).toFixed(2))
+        $(".sys_item_mktprice").text((parseFloat(sys_item_mktprice)+price).toFixed(2))
+
+      })
     })
   })
 
