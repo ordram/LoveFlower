@@ -1,4 +1,4 @@
-.goods { padding: 15px 0 5px; }
+.goods { padding: 15px 0 0; overflow: hidden; }
 .login { padding-top: 0; }
 .login .am-u-sm-12 .am-u-sm-3 p { line-height: 35px; font-size: 16px; color: #999; }
 .login .am-u-sm-12 .am-u-sm-3 p span { border: 1px solid #e6e6e6; padding: 4px 10px; position: relative; }
@@ -20,7 +20,7 @@
 
 
 /* 送达时间 */
-.serDate-box { position: fixed; left: 0; bottom: -260px; width: 100%; height: auto; z-index: 9999; background-color: #fff; padding-bottom: 15px; }
+.serDate-box { position: fixed; left: 0; bottom: -275px; width: 100%; height: auto; z-index: 9999; background-color: #fff; padding-bottom: 50px; }
 .serDate-box .login .login-box div.am-form-group:first-child { border-top: none; }
 .serDate-box .login .login-box .am-form-group select { border: none; }
 .serDate-box .serDate-title { width: 100%; background-color: #f2f2f2; }
@@ -39,3 +39,13 @@
 .serPay-box .login .login-box .am-form-group .li_dingshi select { width: 30%; display: inline-block; }
 .serPay-box .user .user-bot ul li div.user-bot-list { width: calc(100% - 45px); }
 .serPay-box .user .user-bot ul li a i { background-size: 24px; background-position: 0 0; background-repeat: no-repeat; }
+
+
+/* 底部 确认支付 */
+.menu { padding-top: 0; }
+.menu ul { overflow: hidden; }
+.menu ul li { height: 45px; line-height: 45px; }
+.menu ul li p { line-height: 45px; color: #fff; font-size: 16px; }
+.menu ul li:first-child { width: calc(100% - 110px); background-color: #3c3c3c; }
+.menu ul li:first-child p { font-weight: bold; text-align: left; padding-left: 20px; }
+.menu ul li:last-child { width: 110px; background-color: #ca231c; }
