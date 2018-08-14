@@ -49,13 +49,13 @@ body{ background-color: #f2f2f2; }
 .menu ul li { width: 20%; float: left; text-align: center; }
 .menu ul li.active i { background-position: -20px 0; }
 .menu ul li.active p { color: #ca231c; }
-.menu ul li i { display: block; width: 20px; height: 20px; margin: 0 auto; }
+.menu ul li i { display: block; width: 20px; height: 20px; margin: 0 auto; background-repeat: no-repeat; background-size: 40px; }
 .menu ul li p { font-size: 12px; line-height: 20px; }
-.menu ul li:nth-child(1) i { background-image: url(../images/menu_01.png); background-repeat: no-repeat; }
-.menu ul li:nth-child(2) i { background-image: url(../images/menu_02.png); background-repeat: no-repeat; }
-.menu ul li:nth-child(3) i { background-image: url(../images/menu_03.png); background-repeat: no-repeat; }
-.menu ul li:nth-child(4) i { background-image: url(../images/menu_04.png); background-repeat: no-repeat; }
-.menu ul li:nth-child(5) i { background-image: url(../images/menu_05.png); background-repeat: no-repeat; }
+.menu ul li:nth-child(1) i { background-image: url(../images/menu_01.png); }
+.menu ul li:nth-child(2) i { background-image: url(../images/menu_02.png); }
+.menu ul li:nth-child(3) i { background-image: url(../images/menu_03.png); }
+.menu ul li:nth-child(4) i { background-image: url(../images/menu_04.png); }
+.menu ul li:nth-child(5) i { background-image: url(../images/menu_05.png); }
 
 .funTop {position:fixed;bottom:60px;right:20px;z-index: 998;}
 .funTop a{background-color:#eee;width:30px;height:30px;border-radius:50%;text-align:center;line-height:26px;font-size:22px;}

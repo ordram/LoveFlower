@@ -56,12 +56,14 @@ $(document).ready(function () {
 
   $('.timingplay').click(function () {
     if (timingNum == 0) {
-      $('.logistics li.timingplay').addClass(" selected");
+      $('.logistics li.timingplay').addClass("selected");
       $('.timing').css({'display': 'block'});
+      $('span.bonus-title e').text(20);
       timingNum = 1;
     } else {
-      $('.logistics li.timingplay').removeClass(" selected");
+      $('.logistics li.timingplay').removeClass("selected");
       $('.timing').css({'display': 'none'});
+      $('span.bonus-title e').text(0);
       timingNum = 0;
     }
   })
@@ -118,9 +120,6 @@ $(document).ready(function () {
     $('.xh-nvoice .xh-nvoice-content .xh-nvoice-qiye').css({'display':'none'});
     $('.xh-nvoice .xh-nvoice-content .xh-nvoice-geren').css({'display':'block'});
   })
-  
-
-
 
 })
 

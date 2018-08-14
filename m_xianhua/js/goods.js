@@ -32,7 +32,7 @@ $(function(){
       $('.cover02').stop().animate({ opacity : 1 }).css({ 'display' : 'block' });
       serDateNum = 1;
     }else{
-      $('.serDate-box').stop().animate({ bottom : -275 },200);
+      $('.serDate-box').stop().animate({ bottom : -300 },200);
       $('.cover02').stop().animate({ opacity : 0 }).css({ 'display' : 'none' });
       serDateNum = 0;
     }

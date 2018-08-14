@@ -1,6 +1,10 @@
 
 <link rel="stylesheet" href="./css/optstyle.css">
 <link rel="stylesheet" href="./css/style.css">
+<style>
+  .theme-signin-left .sku-line.sku-line-img { width: 38px; padding: 0; height: 38px; overflow: hidden; }
+  .theme-signin-left .sku-line img { width: 100%; }
+</style>
 <div class="listMain">
 
   <!--放大镜-->
@@ -69,90 +73,7 @@
           </li>
           <div class="clear"></div>
         </div>
-        <style>
-          #membership{position: absolute;right: 20px;top: 78px;}
-          .membership{color:#999}
-          .membership:hover{text-decoration:none; color: #d71e06;}
-          .membership i{font-size:14px;color:#bbb}
-          .membership_con{width:254px;z-index:100;overflow:hidden;position:absolute;top:32px;right:0;border:1px solid #e7e7e7;background-color:#fff;line-height:18px;display: none;}
-          .font_w{font-weight:400}
-          .membership_con h3{color:#333;font-size:16px;padding:8px 0;margin:0 15px}
-          .membership_con p{margin:0 15px}
-          .membership_con .how-bd{background-color:#f8f8f8;padding:0 0 4px}
-          .membership_con .how-bd h3{border-bottom:1px solid #e7e7e7}
-          .membership_con table{margin:4px 15px;vertical-align:top}
-          .membership_con table td{color:#333;line-height: 24px;}
-          .membership_con p.gray a{color:#333;font-weight:700;margin-left:5px}
-          .membership_jifen {padding-left:45px;width:150px;padding-bottom:8px}
-        </style>
-        <div id="membership">
-          <a href="javascript:;" class="membership">高级会员购买享有折扣 &or;</a>
-          <div class="membership_con">
-            <div class="how-bd">
-              <h3>会员折扣</h3>
-              <table width="100%">
-              <tbody>
-              <tr>
-                <td width="50%">
-                  会员等级
-                </td>
-                <td width="50%">
-                  会员折扣
-                </td>
-              </tr>
-              <tr id="ECS_RANKPRICE_22">
-                <td>
-                  高级VIP会员
-                </td>
-                <td>
-                  <font>9折</font>
-                </td>
-              </tr>
-              <tr id="ECS_RANKPRICE_23">
-                <td>
-                  至尊VIP会员
-                </td>
-                <td>
-                  <font>8折</font>
-                </td>
-              </tr>
-              <tr id="ECS_RANKPRICE_18">
-                <td>
-                  微博用户
-                </td>
-                <td>
-                  <font>9.5折</font>
-                </td>
-              </tr>
-              <tr id="ECS_RANKPRICE_19">
-                <td>
-                  QQ用户
-                </td>
-                <td>
-                  <font>9.5折</font>
-                </td>
-              </tr>
-              <tr id="ECS_RANKPRICE_21">
-                <td>
-                  高级会员
-                </td>
-                <td>
-                  <font>9.5折</font>
-                </td>
-              </tr>
-              <tr id="ECS_RANKPRICE_24">
-                <td>
-                  初级会员
-                </td>
-                <td>
-                  <font>9.8折</font>
-                </td>
-              </tr>
-              </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+
         <!--地址-->
         <!-- <dl class="iteminfo_parameter freight">
           <dt>配送至</dt>
@@ -180,7 +101,7 @@
         <div class="clear"></div> -->
 
         <!--销量-->
-        <!-- <ul class="tm-ind-panel">
+        <ul class="tm-ind-panel">
           <li class="tm-ind-item tm-ind-sellCount canClick">
             <div class="tm-indcon">
               <span class="tm-label">月销量</span>
@@ -200,7 +121,7 @@
             </div>
           </li>
         </ul>
-        <div class="clear"></div> -->
+        <div class="clear"></div>
 
         <!--各种规格-->
         <dl class="iteminfo_parameter sys_item_specpara">
@@ -228,16 +149,20 @@
                       <div class="cart-title">口味</div>
                       <input type="hidden" name="option[14,5]" value="" price="">
                       <ul>
-                        <li class="sku-line selected" rel="1" price="100">原味
+                        <li class="sku-line sku-line-img selected" rel="1" price="100">
+                          <img src="https://placehold.jp/400x400.png" title="鲜花" />
                           <i></i>
                         </li>
-                        <li class="sku-line" rel="2" price="200">奶油
+                        <li class="sku-line sku-line-img" rel="2" price="200">
+                          <img src="https://placehold.jp/500x500.png" />
                           <i></i>
                         </li>
-                        <li class="sku-line" rel="3" price="300">炭烧
+                        <li class="sku-line sku-line-img" rel="3" price="300">
+                          <img src="https://placehold.jp/600x600.png" />
                           <i></i>
                         </li>
-                        <li class="sku-line" rel="4" price="400">咸香
+                        <li class="sku-line sku-line-img" rel="4" price="400">
+                          <img src="https://placehold.jp/700x700.png" />
                           <i></i>
                         </li>
                       </ul>
@@ -269,23 +194,6 @@
                           <span class="stock">1000</span>件</span>
                       </dd>
 
-                    </div>
-
-                    <div class="theme-options">
-                      <style>
-                        .chosens { width: 100%; padding-left: 10px; }
-                        .chosens span { margin-left: 3px; color: #d71e06; cursor: pointer; }
-                      </style>
-                      <div class="cart-title number" style="margin-top:0;">您已选择</div>
-                      <dd class="chosens">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </dd>
                     </div>
 
                     <div class="clear"></div>
@@ -1311,4 +1219,14 @@
       $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
     });
   });
+
+  var xhImg = $('.theme-options ul li.sku-line-img').eq(0).find('img').attr("src");
+  $('.tb-booth.tb-pic.tb-s310 > a > img').attr({'src':xhImg,'rel':xhImg});
+  console.log(xhImg);
+  $('.theme-signin-left .sku-line.sku-line-img img').click(function(){
+    xhImg = $(this).attr("src");
+    console.log(xhImg);
+    $('.tb-booth.tb-pic.tb-s310 > a > img').attr({'src':xhImg,'rel':xhImg});
+  });
+
 </script>

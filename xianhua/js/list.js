@@ -8,7 +8,7 @@ $(function () {
     var p = i.find("ul>li");
     p.click(function () {
       if (!!$(this).hasClass("selected")) {
-        $(this).removeClass("selected");
+        // $(this).removeClass("selected");
 
       } else {
         $(this).addClass("selected").siblings("li").removeClass("selected");
@@ -18,6 +18,29 @@ $(function () {
     })
 
   })
+
+  // 您已选择
+  $('.chosens span').eq(0).text($(".theme-optionsLi").eq(0).find('ul li').eq(0).text());
+  $('.chosens span').eq(1).text($(".theme-optionsLi").eq(1).find('ul li').eq(0).text());
+  $('.chosens span').eq(2).text($(".theme-optionsLi").eq(2).find('ul li').eq(0).text());
+  $('.chosens span').eq(3).text($(".theme-optionsLi").eq(3).find('ul li').eq(0).text());
+  $('.chosens span').eq(4).text($(".theme-optionsLi").eq(5).find('ul li').eq(0).text());
+  $(".theme-optionsLi").each(function(index){
+    var that = $(this);
+    that.find('ul li').each(function(){
+      $(this).click(function(){
+        $('.chosens span').eq(index).text($(this).text());
+      })
+    })
+  })
+
+  // 会员折扣
+  $('.membership').hover(function(){
+    $('.membership_con').css({ 'display' : 'block' });
+  },function(){
+    $('.membership_con').css({ 'display' : 'none' });
+  })
+
 
   $(".theme-optionsLi").each(function(){
     var i = $(this);

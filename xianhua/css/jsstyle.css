@@ -32,19 +32,12 @@ color: #FFF;}
 
 .op_express_delivery_hot li ,.logistics .pay-list li{ border: 1px solid #efefef; }
 .logistics li.selected {border-color:#d71e06 ;position:relative ;}
-
-.logistics li.selected span {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    font-size: 0;
-    line-height: 0;
-    right: 0px;
-    bottom: 0px;
-    background: url(../img/sys_item_selected.gif) no-repeat right bottom;}
+.logistics li.selected span { position: absolute; width: 10px; height: 10px; font-size: 0; line-height: 0; right: 0px; bottom: 0px;  background: url(../img/sys_item_selected.gif) no-repeat right bottom;}
 .op_express_delivery_hot li {width:32%;float: left; display: block; cursor: pointer;}
 .op_express_delivery_hot i {background: transparent url(../img/kuaidi.png) no-repeat scroll 0px 0px;display: inline-block; width: 36px; height: 36px;vertical-align: middle;overflow: hidden;}
 
+.logistics li.active {border-color:#d71e06 ;position:relative ;}
+.logistics li.active span { position: absolute; width: 10px; height: 10px; font-size: 0; line-height: 0; right: 0px; bottom: 0px;  background: url(../img/sys_item_selected.gif) no-repeat right bottom;}
 /*支付方式*/
 
 .pay-way span.title{float: left;margin-top:10px ;margin-right: 10px;}
@@ -206,3 +199,5 @@ hr {margin: 5px 0px;padding-bottom: 20px;}
 .payment-title { background-color: #e6e6e6; padding: 10px; margin-bottom: 15px; }
 .payment-title h3 { font-size: 18px; font-weight: 500; color: #545454; margin: 0; border: none; }
 textarea { border: 1px solid #e6e6e6; width: 100%; padding: 10px; }
+
+.am-active>.am-dropdown-content { overflow-y: scroll; max-height: 160px; }

@@ -20,7 +20,7 @@
 
 
 /* 送达时间 */
-.serDate-box { position: fixed; left: 0; bottom: -275px; width: 100%; height: auto; z-index: 9999; background-color: #fff; padding-bottom: 50px; }
+.serDate-box { position: fixed; left: 0; bottom: -300px; width: 100%; height: auto; z-index: 9999; background-color: #fff; padding-bottom: 50px; }
 .serDate-box .login .login-box div.am-form-group:first-child { border-top: none; }
 .serDate-box .login .login-box .am-form-group select { border: none; }
 .serDate-box .serDate-title { width: 100%; background-color: #f2f2f2; }

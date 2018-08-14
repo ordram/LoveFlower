@@ -252,12 +252,14 @@
               </select>
             </div>
             
-            <ul class="op_express_delivery_hot">
-              <li class="timingplay" data-value="shunfeng" class="OP_LOG_BTN op_express_delivery_hot_bottom">
-                定时
-                <span></span>
-              </li>
-            </ul>
+            <div class="11">
+              <ul class="op_express_delivery_hot">
+                <li class="timingplay" data-value="shunfeng" class="OP_LOG_BTN op_express_delivery_hot_bottom">
+                  定时
+                  <span></span>
+                </li>
+              </ul>
+            </div>
 
           </div>
           <div class="timing">
@@ -660,8 +662,10 @@
                     }
                     if ($.trim($('#addstart_time').val()) != '' && $.trim($('#shiduanxi').val()) != '') {
                       $('.dateacd').hide();
+                      // $('span.bonus-title e').text(20);
                     } else {
                       $('.dateacd').show();
+                      // $('span.bonus-title e').text(0);
                     }
                   });
                 });
@@ -702,9 +706,11 @@
                   }
                   if (date == '' && ISYONG_SH_HUA == "0") {
                     $('.dateacd').show();
+                    // $('span.bonus-title e').text(0);
                     cansub = 0;
                   } else {
                     $('.dateacd').hide();
+                    // $('span.bonus-title e').text(20);
                   }
                   if (diname == '') {
                     $('#dinghuaname').parent().find('.error').show();
@@ -1385,23 +1391,23 @@
                         </div>
                       </option>
                     </select>
-
                   </li>
-
                 </div> -->
 
               <!-- 积分抵扣 -->
               <div class="buy-agio">
-                <li class="td td-coupon">
-                  <span class="coupon-title">积分抵扣：-
-                    <e>300</e>
-                  </span>
-                </li>
-                <li class="td td-bonus">
-                  <span class="bonus-title">定时服务费：
-                    <e>20</e>
-                  </span>
-                </li>
+                <ul>
+                  <li class="td td-coupon">
+                    <span class="coupon-title"><input type="checkbox"> 积分抵扣：-
+                      <e>300</e>
+                    </span>
+                  </li>
+                  <li class="td td-bonus">
+                    <span class="bonus-title">定时服务费：
+                      <e>0</e>
+                    </span>
+                  </li>
+                </ul>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -1641,6 +1647,32 @@
           <label for="user-phone" class="am-form-label">所在地</label>
           <div class="am-form-content address">
             <select data-am-selected>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
+              <option value="a">浙江省</option>
+              <option value="b">湖北省</option>
               <option value="a">浙江省</option>
               <option value="b">湖北省</option>
             </select>
